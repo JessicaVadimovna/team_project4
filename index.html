@@ -1,29 +1,96 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Московская Биржа</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Московская Биржа</title>
+</head>
+
+<body>
+  <header>
     <!-- Хедер топ - Оля -->
-    <header class="header-top"></header>
-
+    <div class="header-top"></div>
+  
     <!-- Хедер языки -  -->
-    <header class="header-languages"></header>
-
+    <div class="header-languages"></div>
+    <div></div>
     <!-- Хедер ссылки - Лина -->
-    <header class="header-links"></header>
-
+    <div class="header-links">
+      <div class="header-links__wrapper">
+        <div class="header-links__logo">
+          <img src="assets/logo/Lina/ru (1).svg" alt="logo">
+        </div>
+        <div class="header-links__menu">
+          <nav class="header-links__nav">
+            <ul class="header-links__nav-list">
+              <li class="header-links__nav-item">
+                <a href="" class="header-links__nav-link">Продукты и услуги</a>
+              </li>
+              <li class="header-links__nav-item">
+                <a href="" class="header-links__nav-link">Биржевая информация</a>
+              </li>
+              <li class="header-links__nav-item">
+                <a href="" class="header-links__nav-link">Документы</a>
+              </li>
+              <li class="header-links__nav-item">
+                <a href="https://school.moex.com/" class="header-links__nav-link">Обучение</a>
+              </li>
+              <li class="header-links__nav-item">
+                <a href="" class="header-links__nav-link">Медиа</a>
+              </li>
+              <li class="header-links__nav-item">
+                <a href="" class="header-links__nav-link">О компании</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-links__burger-menu">
+          <div class="hamburger" onclick="burgerMenu(this)">
+            <div class="b1"></div>
+            <div class="b2"></div>
+            <div class="b3"></div>
+          </div>
+  
+          <div class="menu">
+            <div class="menu-box">
+              <ul class="ul-menu">
+                <li class="menuItem" id="menuItem1"><a href="#">Рынки</a></li>
+                <li class="menuItem" id="menuItem2"><a href="#">Индексы</a></li>
+                <li class="menuItem" id="menuItem3"><a href="#">Биржевая информация</a></li>
+                <li class="menuItem" id="menuItem4"><a href="#">Листинг</a></li>
+                <li class="menuItem" id="menuItem5"><a href="#">Управления рисками</a></li>
+                <li class="menuItem" id="menuItem6"><a href="#">Технологические решения</a></li>
+                <li class="menuItem"><a href="https://www.moex.com/ru/map.aspx">Карта cайта</a></li>
+              </ul>
+            </div>
+            <div class="menu-box">
+              <ul class="ul-menu">
+                <li class="menuItem"><a href="#">Фондовый рынок</a></li>
+                <li class="menuItem"><a href="#">Срочный рынок</a></li>
+                <li class="menuItem"><a href="#">Валютный рынок</a></li>
+                <li class="menuItem"><a href="#">Денежный рынок</a></li>
+                <li class="menuItem"><a href="#">Товарный рынок</a></li>
+                <li class="menuItem"><a href="#">Рынок стандартизированных ПФИ</a></li>
+                <li class="menuItem"><a href="#">Рынок инноваций и инвестиций</a></li>
+                <li class="menuItem"><a href="#">Сектор Устойчивого развития</a></li>
+                <li class="menuItem"><a href="#">Сектор Роста</a></li>
+                <li class="menuItem"><a href="#">Сектор компаний повышенного инвестиционного роста</a></li>
+                <li class="menuItem"><a href="#">Двусторонние сделки с ЦК</a></li>
+                <li class="menuItem"><a href="#">Торговый календарь</a></li>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
     <!-- Хедер ползунок - Джессика -->
-    <header class="header-slider">
+    <div class="header-slider">
       <div class="quotes-container">
         <div class="header-quote">
           <div class="button-quote">Взлеты дня</div>
@@ -32,38 +99,39 @@
         </div>
         <div class="quotes-list" id="quotes-list"></div>
       </div>
-    </header>
-
+    </div>
+  
     <!-- Хедер баннер - Маша  -->
-    <header class="header-banner"></header>
+    <div class="header-banner"></div>
+  
+  </header>
+  <main>
+    <!-- Мейн погода апи- Настя  -->
+    <section class="main-weather-api"></section>
 
-    <main>
-      <!-- Мейн погода апи- Настя  -->
-      <section class="main-weather-api"></section>
+    <!-- Мейн графики -  -->
+    <section class="main-graphics"></section>
 
-      <!-- Мейн графики -  -->
-      <section class="main-graphics"></section>
+    <!-- Мейн новости - Лина -->
+    <section class="main-news"></section>
 
-      <!-- Мейн новости - Лина -->
-      <section class="main-news"></section>
+    <!-- Мейн анимации - Настя  -->
+    <section class="main-animations"></section>
 
-      <!-- Мейн анимации - Настя  -->
-      <section class="main-animations"></section>
+    <!-- Мейн новости с картинками -  -->
+    <section class="main-news-images"></section>
 
-      <!-- Мейн новости с картинками -  -->
-      <section class="main-news-images"></section>
+    <!-- Мейн отсчет до конца … -  -->
+    <section class="main-countdown"></section>
+  </main>
 
-      <!-- Мейн отсчет до конца … -  -->
-      <section class="main-countdown"></section>
-    </main>
+  <!-- Футер (карта)   -->
+  <footer class="footer-map"></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="js/header-slider.js"></script>
+  <script src="js/header-links.js"></script>
+</body>
 
-    <!-- Футер (карта)   -->
-    <footer class="footer-map"></footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/header-slider.js"></script>
-  </body>
 </html>
