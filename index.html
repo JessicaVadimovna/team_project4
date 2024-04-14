@@ -9,7 +9,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Московская Биржа</title>
   </head>
   <body>
@@ -23,7 +23,16 @@
     <header class="header-links"></header>
 
     <!-- Хедер ползунок - Джессика -->
-    <header class="header-slider"></header>
+    <header class="header-slider">
+      <div class="quotes-container">
+        <div class="header-quote">
+          <div class="button-quote">Взлеты дня</div>
+          <div class="button-quote">Падения дня</div>
+          <div class="button-quote">Индексы</div>
+        </div>
+        <div class="quotes-list" id="quotes-list"></div>
+      </div>
+    </header>
 
     <!-- Хедер баннер - Маша  -->
     <header class="header-banner"></header>
