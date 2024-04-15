@@ -96,9 +96,35 @@
           <button id="vzleti-btn">Взлёты дня</button>
           <button id="padeniya-btn">Падения дня</button>
           <button id="indeksi-btn">Индексы</button>
-          <div id="result"></div>
+          <div id="result">
+    <!-- Начало Взлёты дня -->
+            <div id="cr-widget-marquee"
+            data-coins="bitcoin,ethereum,tether,ripple,cardano"
+            data-theme="dark"
+            data-show-symbol="true"
+            data-show-icon="false"
+            data-show-period-change="true"
+            data-period-change="24H"
+            data-api-url="https://api.cryptorank.io/v0"
+          >
+          </div>
+    <!-- Конец Взлёты дня -->
+
+
+    <!-- Начало Падения дня -->
+
+    <!-- Конец Падения дня -->
+
+
+
+
+    <!-- Индексы начало -->
+
+    <!-- Индексы конец -->
+
+
+  </div>
         </div>
-        <div class="quotes-list" id="quotes-list"></div>
       </div>
     </div>
   
@@ -133,6 +159,7 @@
     crossorigin="anonymous"></script>
   <script src="js/header-slider.js"></script>
   <script src="js/header-links.js"></script>
+  <script src="https://cryptorank.io/widget/marquee.js"></script>
 </body>
 
 </html>
