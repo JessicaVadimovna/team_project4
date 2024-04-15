@@ -1,6 +1,6 @@
 'use strict';
 const request = require('request');
-const apiKey = "W718V36QW9173RIO"; // Замените на ваш API ключ
+const apiKey = "API_KEY"; // Замените на ваш API ключ
 const symbols = ["IBM", "AAPL", "GOOG", "TSLA"]; // Примеры символов
 const quotesList = document.getElementById("quotes-list");
 
