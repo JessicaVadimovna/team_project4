@@ -14,6 +14,7 @@
   src: url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.eot");
   src: url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.woff") format("woff"), url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.svg#Arial") format("svg");
 }
+<<<<<<< HEAD:css/style.css
 .quotes-container {
   background-color: #1e1e1e;
   color: white;
@@ -58,6 +59,11 @@
 .negative {
   color: #d50000; /* Красный цвет */
 }
+=======
+
+
+
+>>>>>>> d4d58bd716f9faf8465d6adc75edc98f2efc2737:css/styles.css
 
 body {
   max-width: 1500px;
@@ -206,6 +212,7 @@ body {
   opacity: 0;
 }
 
+<<<<<<< HEAD:css/style.css
 /* ----------------------------MAIN-NEWS---------------------------- */
 .main-news__title {
   font-size: 30px;
@@ -216,4 +223,53 @@ body {
 .main-news__box {
   display: flex;
   justify-content: space-between;
+=======
+
+
+
+
+.quotes-container {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.header-quote {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.button-quote {
+  background-color: #333;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.quotes-list {
+  display: flex;
+}
+
+.quote {
+  margin-right: 20px;
+  text-align: center;
+}
+
+.symbol {
+  font-weight: bold;
+}
+
+.change {
+  font-size: 14px;
+}
+
+.positive {
+  color: #00c853; /* Зеленый цвет */
+}
+
+.negative {
+  color: #d50000; /* Красный цвет */
+>>>>>>> d4d58bd716f9faf8465d6adc75edc98f2efc2737:css/styles.css
 }

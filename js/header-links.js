@@ -52,13 +52,7 @@ const newsButtonThree = document.getElementById('newsButtonThree');
 
 
 function newsApi() {
-  fetch("https://ok.surf/api/v1/news-feed", {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    mode: "no-cors",
-  })
+  fetch("https://api.spaceflightnewsapi.net/v4/articles/")
   .then((response) => response.json())
   .then((response) => console.log(response))
   .catch((error) => {
