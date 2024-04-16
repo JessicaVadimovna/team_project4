@@ -29,7 +29,7 @@
           <nav class="header-links__nav">
             <ul class="header-links__nav-list">
               <li class="header-links__nav-item">
-                <a href="" class="header-links__nav-link">Продукты и услуги</a>
+                <button href="" class="header-links__nav-link navLink1" onclick="dropdown1()">Продукты и услуги</button>
               </li>
               <li class="header-links__nav-item">
                 <a href="" class="header-links__nav-link">Биржевая информация</a>
@@ -48,6 +48,94 @@
               </li>
             </ul>
           </nav>
+          <!-- <div class="links-dropdown">
+            <ul id="linksDropdown1">
+              <li>
+                <a class="header-links__nav-link" href="https://promo.finuslugi.ru/invest-rating/?from=menu&name=moexraiting">
+                  Инвестиционный рейтинг на Финуслугах
+                  </a>
+                <p class="nav-link__text">
+                  Оцените свой опыт и узнайте свой рейтинг инвестора за 5 минут на Финуслугах
+                </p>
+              </li>
+              <li>
+                <a class="header-links__nav-link" href="https://finuslugi.ru/potrebitelskie_kredity/kreditniy_reyting?from=moexmenu&name=moexcredrating">
+                  Кредитная история на Финуслугах
+                  </a>
+                <p class="nav-link__text">
+                  Узнайте кредитную историю и рейтинг онлайн, чтобы получить выгодные предложения по кредитам на Финуслугах
+                </p>
+              </li>
+              <li>
+                <a class="header-links__nav-link" href="https://finuslugi.ru/vklady?from=moexmenu&name=moexvklady">
+                  Вклады на Финуслугах
+                  </a>
+                <p class="nav-link__text">
+                  Выгодные предложения с максимальной ставкой по вкладам
+                </p>
+              </li>
+              <li>
+                <a class="header-links__nav-link" href="https://finuslugi.ru/potrebitelskie_kredity?from=moexmenu&name=moexkredity">
+                  Кредиты на Финуслугах
+                  </a>
+                <p class="nav-link__text">
+                  Поиск и оформление кредита онлайн
+                </p>
+              </li>
+              <li>
+                <a class="header-links__nav-link" href="https://osago.finuslugi.ru/?from=moexmenu&name=moexosago">
+                  ОСАГО на Финуслугах
+                  </a>
+                <p class="nav-link__text">
+                  Выберите лучшие условия по электронному ОСАГО
+                </p>
+              </li>
+              <li>
+                <a class="header-links__nav-link" href="https://finuslugi.ru/invest/bonds?from=moexmenu&name=moexbonds">
+                  Народные облигации на Финуслугах
+                  </a>
+                <p class="nav-link__text">
+                  Ежедневное начисление процентов, продажа без потери накопленного дохода
+                </p>
+              </li>
+              <li>
+                <a class="header-links__nav-link" href="https://www.moex.com/msn/investor">
+                  Инвестиции
+                  </a>
+                <p>
+                Для знакомства с инструментами
+                </p>
+              </li>
+              <li>
+                <a class="header-links__nav-link" href="https://www.moex.com/ru/data/">
+                  Котировки
+                  </a>
+                <p class="nav-link__text">
+                  Для отслеживания хода торгов
+                </p>
+              </li>
+              <li>
+                <a class="header-links__nav-link" href="https://finuslugi.ru/brokers?from=menu&name=moexbrokers">
+                  Брокеры
+                  </a>
+                <p class="nav-link__text">
+                  Для инвестирования через наших партнеров
+                </p>
+              </li>
+              <li>
+                <a class="header-links__nav-link" href="https://school.moex.com/">
+                  
+    Обучение
+    
+                  </a>
+                <p class="nav-link__text">
+                  
+                  Полезные курсы от экспертов Школы Московской биржи
+                        
+                </p>
+              </li>
+            </ul>
+          </div> -->
         </div>
         <div class="header-links__burger-menu">
           <div class="hamburger" onclick="burgerMenu(this)">
@@ -141,7 +229,22 @@
     <section class="main-graphics"></section>
 
     <!-- Мейн новости - Лина -->
-    <section class="main-news"></section>
+    <section class="main-news">
+      <div class="main-news__wrapper">
+        <h2 class="main-news__title">Новости Московской биржи</h2>
+        <div class="main-news__box">
+          <div class="main-news__one">
+            <button class="main-news__button" id="newsButtonOne"></button>
+          </div>
+          <div class="main-news__two">
+            <button class="main-news__button" id="newsButtonTwo"></button>
+          </div>
+          <div class="main-news__three">
+            <button class="main-news__button" id="newsButtonThree"></button>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Мейн анимации - Настя  -->
     <section class="main-animations"></section>

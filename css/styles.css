@@ -14,9 +14,56 @@
   src: url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.eot");
   src: url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.woff") format("woff"), url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.svg#Arial") format("svg");
 }
+<<<<<<< HEAD:css/style.css
+.quotes-container {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.header-quote {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.button-quote {
+  background-color: #333;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.quotes-list {
+  display: flex;
+}
+
+.quote {
+  margin-right: 20px;
+  text-align: center;
+}
+
+.symbol {
+  font-weight: bold;
+}
+
+.change {
+  font-size: 14px;
+}
+
+.positive {
+  color: #00c853; /* Зеленый цвет */
+}
+
+.negative {
+  color: #d50000; /* Красный цвет */
+}
+=======
 
 
 
+>>>>>>> d4d58bd716f9faf8465d6adc75edc98f2efc2737:css/styles.css
 
 body {
   max-width: 1500px;
@@ -30,6 +77,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
 }
 
 .header-links__menu {
@@ -51,9 +99,31 @@ body {
   margin-top: -58px;
 }
 
+.header-links__nav-link:hover {
+  color: red;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.links-dropdown {
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  /* z-index: 1; */
+  margin-top: 200px;
+}
+
+#linksDropdown1 {
+  display: grid;
+  margin-top: 200px;
+}
+
+.show {
+  display: flex;
+}
+
 /*  */
-
-
 .menuItem {
   display: block;
   margin: 2rem 4rem;
@@ -64,6 +134,7 @@ body {
 
 .menuItem a:hover {
   color: red;
+  transition: 0.3s;
 }
 
 .hamburger {
@@ -87,7 +158,7 @@ body {
   margin-top: 10px;
 }
 
-.menu-box, {
+.menu-box {
   display: flex;
   justify-content: flex-end;
   margin-right: 50px;
@@ -119,7 +190,6 @@ body {
 
 /* 
  */
-
 .b1,
 .b2,
 .b3 {
@@ -133,6 +203,7 @@ body {
 .change .b1 {
   transform: rotate(-45deg) translate(-9px, 6px);
 }
+
 .change .b3 {
   transform: rotate(45deg) translate(-8px, -8px);
 }
@@ -141,6 +212,18 @@ body {
   opacity: 0;
 }
 
+<<<<<<< HEAD:css/style.css
+/* ----------------------------MAIN-NEWS---------------------------- */
+.main-news__title {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+
+.main-news__box {
+  display: flex;
+  justify-content: space-between;
+=======
 
 
 
@@ -188,4 +271,5 @@ body {
 
 .negative {
   color: #d50000; /* Красный цвет */
+>>>>>>> d4d58bd716f9faf8465d6adc75edc98f2efc2737:css/styles.css
 }
