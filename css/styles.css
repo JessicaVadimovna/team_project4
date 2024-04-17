@@ -14,7 +14,6 @@
   src: url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.eot");
   src: url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.woff") format("woff"), url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.svg#Arial") format("svg");
 }
-<<<<<<< HEAD:css/style.css
 .quotes-container {
   background-color: #1e1e1e;
   color: white;
@@ -59,11 +58,6 @@
 .negative {
   color: #d50000; /* Красный цвет */
 }
-=======
-
-
-
->>>>>>> d4d58bd716f9faf8465d6adc75edc98f2efc2737:css/styles.css
 
 body {
   max-width: 1500px;
@@ -147,8 +141,8 @@ body {
 }
 
 /* .closeIcon {
-  display: none;
-} */
+   display: none;
+ } */
 .ul-menu {
   display: block;
   font-size: 20px;
@@ -189,7 +183,7 @@ body {
 }
 
 /* 
- */
+  */
 .b1,
 .b2,
 .b3 {
@@ -212,64 +206,32 @@ body {
   opacity: 0;
 }
 
-<<<<<<< HEAD:css/style.css
 /* ----------------------------MAIN-NEWS---------------------------- */
 .main-news__title {
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 400;
   margin-bottom: 35px;
+  text-transform: uppercase;
+}
+
+.main-news__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 85px 35px;
 }
 
 .main-news__box {
-  display: flex;
-  justify-content: space-between;
-=======
-
-
-
-
-.quotes-container {
-  background-color: #1e1e1e;
-  color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 10px;
-  border-radius: 5px;
 }
 
-.header-quote {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5px;
+.news-box__title {
+  font-size: 20px;
+  font-weight: 600;
 }
 
-.button-quote {
-  background-color: #333;
-  padding: 5px 10px;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-.quotes-list {
-  display: flex;
-}
-
-.quote {
-  margin-right: 20px;
-  text-align: center;
-}
-
-.symbol {
-  font-weight: bold;
-}
-
-.change {
-  font-size: 14px;
-}
-
-.positive {
-  color: #00c853; /* Зеленый цвет */
-}
-
-.negative {
-  color: #d50000; /* Красный цвет */
->>>>>>> d4d58bd716f9faf8465d6adc75edc98f2efc2737:css/styles.css
+.main-news__button {
+  background: none;
+  color: red;
+  margin-top: 20px;
 }
