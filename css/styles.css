@@ -38,7 +38,7 @@
   display: flex;
   justify-content: space-between;
   gap: 8px;
-  background-color: #fff0;
+  background-color: #797c82;
   color: #797c82;
 }
 
@@ -59,11 +59,33 @@
   
 }
 
+#vzleti-btn {
+  min-width: 127px;
+  min-height: 36px;
+  border: 2px solid #6d7075;
+}
+
+#padeniya-btn {
+  min-width: 127px;
+  min-height: 36px;
+  background-color: #797c82;
+}
+
+#indeksi-btn {
+  min-width: 127px;
+  min-height: 36px;
+  background-color: #797c82;
+}
 
 .quotes-list {
   display: flex;
   min-width: 0;
-  
+}
+
+.cr-widget-marquee-container__dark {
+background-color: #13161c;
+box-shadow: #181818;
+border-radius: 0%;
 }
 
 
