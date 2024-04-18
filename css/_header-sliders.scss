@@ -1,44 +1,89 @@
-.quotes-container {
-    background-color: #1e1e1e;
+.header-slider {
+    display: flex;
+    gap: 8px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #13161c;
+    max-width: 1500px;
+  
+  }
+  
+  .quotes-container {
+    display: flex;
+    background-color: #18181f;
     color: white;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.header-quote {
+    min-width: 0;
+  
+  }
+  
+  .header-quote {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5px;
-}
-
-.button-quote {
-    background-color: #333;
-    padding: 5px 10px;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.quotes-list {
+    gap: 8px;
+    background-color: #343537;
+    color: #797c82;
+  }
+  
+  .button-quote {
+    appearance: none;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    font-weight: 500;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    position: relative;
+    border-width: 2px;
+    border-style: solid;
+  
+  }
+  
+  #vzleti-btn {
+    min-width: 127px;
+    min-height: 36px;
+    border: 2px solid #343537;
+  }
+  
+  #padeniya-btn {
+    min-width: 127px;
+    min-height: 36px;
+    background-color: #343537;
+    color: #797c82;
+  }
+  
+  #indeksi-btn {
+    min-width: 127px;
+    min-height: 36px;
+    background-color: #343537;
+    color: #797c82;
+  }
+  
+  .quotes-list {
     display: flex;
-}
-
-.quote {
-    margin-right: 20px;
-    text-align: center;
-}
-
-.symbol {
-    font-weight: bold;
-}
-
-.change {
-    font-size: 14px;
-}
-
-.positive {
-    color: #00c853; /* Зеленый цвет */
-}
-
-.negative {
-    color: #d50000; /* Красный цвет */
-}
+    min-width: 0;
+    background-color: #13161c;
+  }
+  
+  
+  .cr-widget-marquee-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+    border-radius: 0!important;
+  }
+  
+  .cr-widget-marquee-container__dark {
+  background-color: #13161c;
+  }
+  
+  
+  .cr-marquee-label {
+    display: none;
+    position: absolute;
+    margin-left: -999999999999999px; 
+    margin-bottom: 999999999px;
+  }
