@@ -236,48 +236,61 @@ body {
   margin-top: 20px;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  display: inline;
-  padding: 0;
-}
-
 .header-top {
-  max-width: 1750px;
   background-color: white;
-  margin: 0 auto;
-  padding: 15px 0px 18px 0px;
+  padding: 24px 0px 18px 0px;
   display: flex;
   justify-content: space-between;
 }
-.header-top__text {
+.header-top__leftblock {
+  display: flex;
+  gap: 10px;
+}
+.header-top__rightblock {
+  display: flex;
+  gap: 30px;
+}
+.header-top__line {
+  display: block;
+  border: none;
+  border-top: 1px solid black;
+  margin: 0em 0;
+  padding: 0;
+}
+.header-top__icon {
+  width: 36px;
+  height: 36px;
+}
+.header-top__directions-text {
   display: inline-block;
-  padding-bottom: 16px;
   vertical-align: middle;
+  font-size: 24px;
+}
+.header-top__list {
+  padding-left: 0;
+}
+.header-top__hover {
+  font-size: 24px;
 }
 .header-top__date {
   opacity: 0.6;
+  font-size: 24px;
+}
+.header-top__search {
+  width: 500px;
 }
 .header-top__search-text {
   font-family: inherit;
   font-size: inherit;
   border: none;
   background-color: transparent;
+  font-size: 24px;
+  width: 80%;
 }
 .header-top__hover:hover {
   color: rgb(245, 20, 20);
 }
-.header-top__container {
+.header-top__nav {
   display: flex;
   gap: 30px;
 }
@@ -296,6 +309,17 @@ li {
   border-bottom: 1px solid black;
   position: relative;
 }
+.header-top__menu li h2 {
+  padding: 0 0 0 30px;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.header-top__menu li p {
+  line-height: 20px;
+  font-weight: 100;
+  padding: 0 0 20px 30px;
+}
 .header-top__menu li:before {
   content: "";
   background: url(./assets/img/header-top/diagonal-arrow-right-up-black.svg) center/contain no-repeat;
@@ -313,30 +337,8 @@ li {
 .header-top__menu li:last-child {
   border-bottom: none;
 }
-.header-top__menu-title {
-  padding: 0 0 0 30px;
-}
-.header-top__menu-text {
-  padding: 0 0 20px 30px;
-}
-
-/* width: 100%; */
-.icon {
-  width: 26px;
-}
-
-/* Горизонтальная линия между частями хедера */
-.line {
-  display: block;
-  height: 3px;
-  border: none;
-  border-top: 3px solid #ccc;
-  margin: 0em 0;
-  padding: 0;
-}
 
 /* Колонки выпадающего меню */
 /* display: inline-block;
     width: 30%;
-    height: 400px; */
-/* Стилизация стрелок *//*# sourceMappingURL=styles.css.map */
+    height: 400px; *//*# sourceMappingURL=styles.css.map */

@@ -1,46 +1,70 @@
-a {
-  text-decoration: none;
-  color: black;
-}
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-li {
-  display: inline;
-  padding: 0;
-}
 .header-top {
-  max-width: 1750px;
   background-color: white;
-  margin: 0 auto;
-  padding: 15px 0px 18px 0px;
+  padding: 24px 0px 18px 0px;
   display: flex;
   justify-content: space-between;
 
-  &__text {
-    display: inline-block;
-    padding-bottom: 16px;
-    vertical-align: middle;
+  &__leftblock {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__rightblock {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__line {
+    display: block;
+    border: none;
+    border-top: 1px solid black;
+    margin: 0em 0;
+    padding: 0;
+  }
+
+  &__icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  &__directions {
+    &-text {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 24px;
+    }
+  }
+
+  &__list {
+    padding-left: 0;
+  }
+
+  &__hover {
+    font-size: 24px;
   }
 
   &__date {
     opacity: 0.6;
+    font-size: 24px;
   }
 
-  &__search-text {
-    font-family: inherit;
-    font-size: inherit;
-    border: none;
-    background-color: transparent;
+  &__search {
+    width: 500px;
+    &-text {
+      font-family: inherit;
+      font-size: inherit;
+      border: none;
+      background-color: transparent;
+      font-size: 24px;
+      width: 80%;
+    }
   }
 
   &__hover:hover {
     color: rgb(245, 20, 20);
   }
 
-  &__container {
+  &__nav {
     display: flex;
     gap: 30px;
   }
@@ -57,8 +81,19 @@ li {
     width: 100%;
 
     & li {
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid $black;
       position: relative;
+      & h2 {
+        padding: 0 0 0 30px;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 30px;
+      }
+      & p {
+        line-height: 20px;
+        font-weight: 100;
+        padding: 0 0 20px 30px;
+      }
       &:before {
         content: "";
         background: url(./assets/img/header-top/diagonal-arrow-right-up-black.svg)
@@ -80,51 +115,9 @@ li {
     & li:last-child {
       border-bottom: none;
     }
-    &-title {
-      padding: 0 0 0 30px;
-    }
-    &-text {
-      padding: 0 0 20px 30px;
-    }
   }
 }
-// .header-top__search-text {
-//   font-family: inherit;
-//   font-size: inherit;
-//   border: none;
-//   background-color: transparent;
-/* width: 100%; */
-// }
-// .header-top__text {
-//   display: inline-block;
-//   padding-bottom: 16px;
-//   vertical-align: middle;
-// }
-// .header-top__date {
-//   opacity: 0.6;
-// }
-.icon {
-  width: 26px;
-}
-//   .header-top__hover:hover {
-//     color: rgb(245, 20, 20);
-//   }
-//   .header-top__container {
-//     display: flex;
-//     gap: 30px;
-//   }
-//   .header-top__link-left {
-//     margin-right: 30px;
-//   }
-/* Горизонтальная линия между частями хедера */
-.line {
-  display: block;
-  height: 3px;
-  border: none;
-  border-top: 3px solid #ccc;
-  margin: 0em 0;
-  padding: 0;
-}
+
 /* Колонки выпадающего меню */
 // .header-top__menu {
 //   position: relative;
@@ -137,36 +130,3 @@ li {
 /* display: inline-block;
     width: 30%;
     height: 400px; */
-
-// .header-top__menu li {
-//   border-bottom: 1px solid black;
-//   position: relative;
-// }
-// .header-top__menu li:last-child {
-//   border-bottom: none;
-// }
-
-// .header-top__menu-title {
-//   padding: 0 0 0 30px;
-// }
-// .header-top__menu-text {
-//   padding: 0 0 20px 30px;
-// }
-
-/* Стилизация стрелок */
-// .header-top__menu li:before {
-//   content: "";
-//   background: url(images/diagonal-arrow-right-up-black.svg) center/contain
-//     no-repeat;
-//   position: absolute;
-//   bottom: 0;
-//   left: 30px;
-//   width: 30px;
-//   height: 30px;
-// }
-// .header-top__menu li:hover:before {
-//   background: url(images/diagonal-arrow-right-up-red.svg) center/contain
-//     no-repeat;
-//   transition: 0.5s ease-in;
-//   transform: scale(1.3);
-// }
