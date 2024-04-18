@@ -14,7 +14,137 @@
 <body>
   <header>
     <!-- Хедер топ - Оля -->
-    <div class="header-top"></div>
+    <div class="header-top">
+      <div class="header-top__leftblock">
+        <nav class="header-top__directions">
+          <ul class="header-top__list">
+            <li>
+              <a href="/">
+                <img
+                  src="./assets/img/header-top/menu-dots-black.svg"
+                  alt="Directions"
+                  class="header-top__directions-icon header-top__icon red "
+                />
+                <span class="header-top__directions-text header-top__hover red"
+                  >Направления</span
+                >
+              </a>
+               <!-- <ul class="header-top__menu">
+                <li>
+                  <h2>Финуслуги</h2>
+                  <p>
+                    Финуслуги - маркетплейс финансовых услуг от Мосбиржи,
+                    платформа №1 в реестре ЦБ РФ
+                  </p>
+                </li>
+                <li>
+                  <h2>Школа Московской биржи</h2>
+                  <p>
+                    Московская биржа рассказывает начинающим инвесторам: как
+                    инвестировать на бирже с умом и как грамотно использовать
+                    финансовые инструменты.
+                  </p>
+                </li>
+                <li>
+                  <h2>
+                    Национальный Клиринговый Центр
+                  </h2>
+                  <p>
+                    Услуги центрального контрагента и клиринговой организации
+                  </p>
+                </li>
+                <li>
+                  <h2>
+                    Национальная Товарная Биржа
+                  </h2>
+                  <p>
+                    Организация биржевого товарного рынка в России
+                  </p>
+                </li>
+                <li>
+                  <h2>Биржа для бизнеса</h2>
+                  <p>
+                    Биржевые инструменты и сервисы, которые помогут вашему бизнесу
+                    расти
+                  </p>
+                </li>
+                <li>
+                  <h2>
+                    Национальный расчетный депозитарий
+                  </h2>
+                  <p>
+                    Услуги центрального депозитария, расчетного банка и торгового
+                    репозитария
+                  </p>
+                </li>
+                <li>
+                  <h2>
+                    Венчурный фонд МБ Инновации
+                  </h2>
+                  <p>
+                    Оказываем содействие в развитии инновационных технологий
+                    финансового рынка России
+                  </p>
+                </li>
+              </ul>  -->
+            </li>
+          </ul>
+        </nav>
+        <form class="header-top__search" name="headerForm">
+          <a href="/">
+            <img
+              src="./assets/img/header-top/search-black.svg"
+              alt="search"
+              class="header-top__search-icon header-top__text red header-top__icon"
+            />
+          </a>
+          <input
+            type="search"
+            placeholder="Поиск"
+            class="header-top__search-text header-top__hover"
+            name="searchForm"
+            value=""
+          />
+        </form>
+      </div>
+      <div class="header-top__rightblock">
+          <div class="header-top__date"></div>
+          <ul class="header-top__nav">
+              <li>
+                <a
+                  href="/"
+                  class="header-top__link-entry header-top__hover"
+                  >Вход</a
+                >
+              </li>
+              <li>
+                <a href="/" class="header-top__link-registr header-top__hover"
+                  >Регистрация</a
+                >
+              </li>
+          </ul>
+          <div class="header-top__cart">
+            <a href="/">
+              <img
+                class="header-top__cart-image red header-top__icon"
+                src="./assets/img/header-top/shopping-cart-black.svg"
+                alt="Shopping cart"
+              />
+            </a>
+          </div>
+          <div class="header-top__lang">
+            <a href="/">
+              <span class="header-top__lang-ru  header-top__hover">Ru</span>
+            </a>
+            <span>/</span>
+            <a href="/">
+              <span class="header-top__lang-en header-top__hover">En</span>
+            </a>
+          </div>
+      </div>
+    </div>
+    <hr class="header-top__line" />
+    
   
     <!-- Хедер языки -  -->
     <div class="header-languages"></div>
@@ -29,7 +159,7 @@
           <nav class="header-links__nav">
             <ul class="header-links__nav-list">
               <li class="header-links__nav-item">
-                <a href="" class="header-links__nav-link">Продукты и услуги</a>
+                <button href="" class="header-links__nav-link navLink1" onclick="dropdown1()">Продукты и услуги</button>
               </li>
               <li class="header-links__nav-item">
                 <a href="" class="header-links__nav-link">Биржевая информация</a>
@@ -48,9 +178,97 @@
               </li>
             </ul>
           </nav>
+          <!-- <div class="links-dropdown">
+            <ul id="linksDropdown1">
+              <li>
+                <a class="header-links__nav-link" href="https://promo.finuslugi.ru/invest-rating/?from=menu&name=moexraiting">
+                  Инвестиционный рейтинг на Финуслугах
+                  </a>
+                <p class="nav-link__text">
+                  Оцените свой опыт и узнайте свой рейтинг инвестора за 5 минут на Финуслугах
+                </p>
+              </li>
+              <li>
+                <a class="header-links__nav-link" href="https://finuslugi.ru/potrebitelskie_kredity/kreditniy_reyting?from=moexmenu&name=moexcredrating">
+                  Кредитная история на Финуслугах
+                  </a>
+                <p class="nav-link__text">
+                  Узнайте кредитную историю и рейтинг онлайн, чтобы получить выгодные предложения по кредитам на Финуслугах
+                </p>
+              </li>
+              <li>
+                <a class="header-links__nav-link" href="https://finuslugi.ru/vklady?from=moexmenu&name=moexvklady">
+                  Вклады на Финуслугах
+                  </a>
+                <p class="nav-link__text">
+                  Выгодные предложения с максимальной ставкой по вкладам
+                </p>
+              </li>
+              <li>
+                <a class="header-links__nav-link" href="https://finuslugi.ru/potrebitelskie_kredity?from=moexmenu&name=moexkredity">
+                  Кредиты на Финуслугах
+                  </a>
+                <p class="nav-link__text">
+                  Поиск и оформление кредита онлайн
+                </p>
+              </li>
+              <li>
+                <a class="header-links__nav-link" href="https://osago.finuslugi.ru/?from=moexmenu&name=moexosago">
+                  ОСАГО на Финуслугах
+                  </a>
+                <p class="nav-link__text">
+                  Выберите лучшие условия по электронному ОСАГО
+                </p>
+              </li>
+              <li>
+                <a class="header-links__nav-link" href="https://finuslugi.ru/invest/bonds?from=moexmenu&name=moexbonds">
+                  Народные облигации на Финуслугах
+                  </a>
+                <p class="nav-link__text">
+                  Ежедневное начисление процентов, продажа без потери накопленного дохода
+                </p>
+              </li>
+              <li>
+                <a class="header-links__nav-link" href="https://www.moex.com/msn/investor">
+                  Инвестиции
+                  </a>
+                <p>
+                Для знакомства с инструментами
+                </p>
+              </li>
+              <li>
+                <a class="header-links__nav-link" href="https://www.moex.com/ru/data/">
+                  Котировки
+                  </a>
+                <p class="nav-link__text">
+                  Для отслеживания хода торгов
+                </p>
+              </li>
+              <li>
+                <a class="header-links__nav-link" href="https://finuslugi.ru/brokers?from=menu&name=moexbrokers">
+                  Брокеры
+                  </a>
+                <p class="nav-link__text">
+                  Для инвестирования через наших партнеров
+                </p>
+              </li>
+              <li>
+                <a class="header-links__nav-link" href="https://school.moex.com/">
+                  
+    Обучение
+    
+                  </a>
+                <p class="nav-link__text">
+                  
+                  Полезные курсы от экспертов Школы Московской биржи
+                        
+                </p>
+              </li>
+            </ul>
+          </div> -->
         </div>
         <div class="header-links__burger-menu">
-          <div class="hamburger" onclick="burgerMenu(this)">
+          <div class="hamburger" >
             <div class="b1"></div>
             <div class="b2"></div>
             <div class="b3"></div>
@@ -96,9 +314,36 @@
           <button id="vzleti-btn">Взлёты дня</button>
           <button id="padeniya-btn">Падения дня</button>
           <button id="indeksi-btn">Индексы</button>
-          <div id="result"></div>
+          <div id="result">
+    <!-- Начало Взлёты дня -->
+    <div id="cr-widget-marquee"
+    style="width: 1040px; height: 40px; overflow: hidden;"
+    data-coins="bitcoin,ethereum,tether,ripple,cardano"
+    data-theme="dark"
+    data-show-symbol="true"
+    data-show-icon="false"
+    data-show-period-change="true"
+    data-period-change="24H"
+    data-api-url="https://api.cryptorank.io/v0">
+          >
+          </div>
+    <!-- Конец Взлёты дня -->
+
+
+    <!-- Начало Падения дня -->
+
+    <!-- Конец Падения дня -->
+
+
+
+
+    <!-- Индексы начало -->
+
+    <!-- Индексы конец -->
+
+
+  </div>
         </div>
-        <div class="quotes-list" id="quotes-list"></div>
       </div>
     </div>
   
@@ -116,7 +361,13 @@
     <section class="main-graphics"></section>
 
     <!-- Мейн новости - Лина -->
-    <section class="main-news"></section>
+    <section class="main-news">
+      <div class="main-news__wrapper">
+        <h2 class="main-news__title">Новости Московской биржи</h2>
+        <div class="main-news__container">
+        </div>
+      </div>
+    </section>
 
     <!-- Мейн анимации - Настя  -->
     <section class="main-animations"></section>
@@ -133,8 +384,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+  <script src="js/header-top.js"></script>
   <script src="js/header-slider.js"></script>
   <script src="js/header-links.js"></script>
+  <script src="https://cryptorank.io/widget/marquee.js"></script>
 </body>
 
 </html>
