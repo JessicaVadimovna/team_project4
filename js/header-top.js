@@ -14,45 +14,10 @@ inputName.addEventListener("blur", function () {
   redSearch.src = "./assets/img/header-top/search-black.svg";
 });
 
-// 2. Окрашивание элементов в красный цвет при наведении
-// const redItems = document.querySelectorAll(".red");
+// 2. Окрашивание иконок (лупа и корзина) в красный цвет при наведении
 const redBusket = document.querySelector(".header-top__cart-image");
 const redSearch = document.querySelector(".header-top__search-icon");
 
-//Добавляем обработчики событий mouseenter и mouseleave на слова
-// redItems.forEach((redItem) => {
-//   redItem.addEventListener("mouseenter", () => {
-//     redItem.style.color = "rgb(245, 20, 20)";
-//   });
-// });
-
-// redItems.forEach((redItem) => {
-//   redItem.addEventListener("mouseleave", () => {
-//     redItem.style.color = "black";
-//   });
-// });
-//Добавляем обработчики событий mouseenter и mouseleave на точки и Направления
-const redDirDots = document.querySelector(".header-top__directions");
-const redDots = document.querySelector(".header-top__directions-icon");
-const redDirText = document.querySelector(".header-top__directions-text");
-redDirDots.addEventListener("mouseenter", () => {
-  redDots.src = "./assets/img/header-top/menu-dots-red.svg";
-  redDirText.style.color = "rgb(245, 20, 20)";
-  // redDots.style.transition = "2s ease-in";
-});
-redDirDots.addEventListener("mouseleave", () => {
-  redDots.src = "./assets/img/header-top/menu-dots-black.svg";
-  redDirText.style.color = "black";
-});
-
-//Добавляем обработчики событий mouseenter и mouseleave на Точки
-// redDots.addEventListener("mouseenter", () => {
-//   redDots.src = "images/menu-dots-red.svg";
-// });
-
-// redDots.addEventListener("mouseleave", () => {
-//   redDots.src = "images/menu-dots-black.svg";
-// });
 //Добавляем обработчики событий mouseenter и mouseleave на Лупу
 redSearch.addEventListener("mouseenter", () => {
   redSearch.src = "./assets/img/header-top/search-red.svg";
@@ -70,7 +35,51 @@ redBusket.addEventListener("mouseleave", () => {
   redBusket.src = "./assets/img/header-top/shopping-cart-black.svg";
 });
 
-// 3. Время, дата, день недели
+// 3. Окрашивание точки и Направления в красный цвет при наведении
+const redDirDots = document.querySelector(".header-top__directions-list");
+const redDots = document.querySelector(".header-top__directions-icon");
+const redDirText = document.querySelector(".header-top__directions-text");
+
+//Добавляем обработчики событий mouseenter и mouseleave на точки и Направления
+redDirDots.addEventListener("mouseenter", () => {
+  redDots.src = "./assets/img/header-top/menu-dots-red.svg";
+  redDirText.style.color = "rgb(245, 20, 20)";
+  redDirDots.style.transition = "2s ease-in";
+});
+redDirDots.addEventListener("mouseleave", () => {
+  redDots.src = "./assets/img/header-top/menu-dots-black.svg";
+  redDirText.style.color = "black";
+});
+
+// 4. Окрашивание элементов выпадающего списка в красный цвет при наведении
+const redLi = document.querySelector(".li-red");
+const redH2s = document.querySelectorAll(".h2-red");
+const redArrows = document.querySelectorAll(".header-top__directions-arrow");
+
+// Добавляем обработчики событий mouseenter и mouseleave на элементы выпадающего списка
+redArrows.forEach((redArrow) => {
+  redLi.addEventListener("mouseenter", () => {
+    redArrow.src = "./assets/img/header-top/diagonal-arrow-right-up-red.svg";
+  });
+});
+redH2s.forEach((redH2) => {
+  redLi.addEventListener("mouseenter", () => {
+    redH2.style.color = "red";
+  });
+});
+
+redArrows.forEach((redArrow) => {
+  redLi.addEventListener("mouseleave", () => {
+    redArrow.src = "./assets/img/header-top/diagonal-arrow-right-up-black.svg";
+  });
+});
+redH2s.forEach((redH2) => {
+  redLi.addEventListener("mouseleave", () => {
+    redH2.style.color = "black";
+  });
+});
+
+// 5. Время, дата, день недели
 const currentDate = document.querySelector(".header-top__date");
 const dateCur = new Date();
 locale = "ru-ru";
