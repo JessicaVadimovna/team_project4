@@ -14,6 +14,27 @@
   src: url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.eot");
   src: url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.woff") format("woff"), url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.svg#Arial") format("svg");
 }
+.quote {
+  margin-right: 20px;
+  text-align: center;
+}
+
+.symbol {
+  font-weight: bold;
+}
+
+.change {
+  font-size: 14px;
+}
+
+.positive {
+  color: #00c853; /* Зеленый цвет */
+}
+
+.negative {
+  color: #d50000; /* Красный цвет */
+}
+
 .header-slider {
   display: flex;
   gap: 8px;
@@ -28,7 +49,6 @@
   background-color: #18181f;
   color: white;
   min-width: 0;
-
 }
 
 .header-quote {
@@ -37,11 +57,12 @@
   gap: 8px;
   background-color: #343537;
   color: #797c82;
-  max-width: 380px;
 }
 
 .button-quote {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   box-sizing: border-box;
   display: inline-flex;
   align-items: center;
@@ -54,38 +75,27 @@
   position: relative;
   border-width: 2px;
   border-style: solid;
-
 }
 
-
-
-#vzleti-btn,
-#padeniya-btn,
-#indeksi-btn {
+#vzleti-btn {
   min-width: 127px;
   min-height: 36px;
   border: 2px solid #343537;
+}
+
+#padeniya-btn {
+  min-width: 127px;
+  min-height: 36px;
   background-color: #343537;
   color: #797c82;
-  cursor: pointer;
 }
 
-#vzleti-btn:hover,
-#padeniya-btn:hover,
-#indeksi-btn:hover {
-  background-color: #555;
-  color: #fff;
+#indeksi-btn {
+  min-width: 127px;
+  min-height: 36px;
+  background-color: #343537;
+  color: #797c82;
 }
-
-#vzleti-btn.active,
-#padeniya-btn.active,
-#indeksi-btn.active {
-  background-color: #007bff;
-  color: #fff;
-}
-
-
-
 
 .quotes-list {
   display: flex;
@@ -93,55 +103,23 @@
   background-color: #13161c;
 }
 
-
 .cr-widget-marquee-container {
   display: flex;
   overflow: hidden;
   position: relative;
   padding: 10px;
-  border-radius: 0!important;
-  max-width: 1060px;
+  border-radius: 0 !important;
 }
 
 .cr-widget-marquee-container__dark {
-background-color: #13161c;
+  background-color: #13161c;
 }
-
-
-
-
-.cr-widget-marquee-container:before,
-.cr-widget-marquee-container:after {
-    position: absolute;
-    z-index: 1;
-    width: 72px;
-    top: 0;
-    bottom: 0;
-    content: "";
-}
-
-.cr-widget-marquee-container:before {
-    left: 0;
-    background: linear-gradient(90deg, #13161c 0%, rgba(24, 25, 27, 0) 100%);
-}
-
-.cr-widget-marquee-container:after {
-    right: 0;
-    background: linear-gradient(270deg, #13161c 0%, rgba(24, 25, 27, 0) 100%);
-}
-
-
-
-
-
-
 
 .cr-marquee-label {
   display: none;
   position: absolute;
-  margin-left: -999999999999999px; 
+  margin-left: -999999999999999px;
   margin-bottom: 999999999px;
-  margin-top: 99999999px;
 }
 
 body {
@@ -426,4 +404,201 @@ body {
 /* Колонки выпадающего меню */
 /* display: inline-block;
     width: 30%;
-    height: 400px; *//*# sourceMappingURL=styles.css.map */
+    height: 400px; */
+#decor-steps__step0 {
+  background-color: rgb(243, 244, 246);
+  padding: 0;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  height: 200px;
+  transform: translate(600px);
+}
+
+#decor-steps__step1 {
+  background-color: rgb(243, 244, 246);
+  padding: 0;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  height: 200px;
+  transform: translate(800px);
+}
+
+#decor-steps__step2 {
+  background-color: rgb(243, 244, 246);
+  padding: 0;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  height: 100px;
+  transform: translate(1000px);
+}
+
+#decor-steps__step3 {
+  background-color: rgb(243, 244, 246);
+  padding: 0;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  height: 10px;
+  transform: translate(800px);
+}
+
+.main-slider {
+  width: 100vw;
+  padding-top: 1vw;
+  background-color: #f3f4f6;
+}
+
+.header-banner__pagination-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-slider__pagination {
+  font-size: 16px;
+  line-height: 24px;
+  color: #696a6c;
+}
+
+#carousel-wrapper_banner {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+#carousel-wrapper_banner #menu_banner {
+  height: 380px;
+  width: 100%;
+  overflow: hidden;
+  font-weight: 700;
+  line-height: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  position: relative;
+}
+#carousel-wrapper_banner #menu_banner #current-option_banner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  overflow: hidden;
+}
+#carousel-wrapper_banner #menu_banner #current-option_banner #current-option-text1_banner {
+  max-width: 520px;
+  max-height: 255px;
+  font-size: 40px;
+  line-height: 1em;
+  font-weight: 700;
+  color: #ff0508;
+  overflow: hidden;
+  background-color: rgb(243, 244, 246);
+  z-index: 3;
+}
+#carousel-wrapper_banner #menu_banner #current-option_banner #current-option-text2_banner {
+  margin-top: auto;
+  margin-bottom: 0;
+  padding-bottom: 40px;
+  max-width: 400px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+  z-index: 2;
+  font-weight: 400;
+}
+#carousel-wrapper_banner #menu_banner #previous-option_banner {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  display: flex;
+  cursor: pointer;
+  background: url("../assets/img/left_arrow_i3s1ev6wq5q8.svg");
+  background-size: cover;
+  background-color: #ffffff;
+  position: relative;
+  transform: translate(-100px, 150px);
+  transition: 2s ease-in-out;
+  z-index: 2;
+}
+#carousel-wrapper_banner #menu_banner #next-option_banner {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  display: flex;
+  cursor: pointer;
+  background: url("../assets/img/left_arrow_i3s1ev6wq5q8.svg");
+  background-size: cover;
+  position: relative;
+  transform: translate(-90px, 150px) rotate(180deg);
+  transition: 2s ease-in-out;
+  z-index: 2;
+}
+#carousel-wrapper_banner #image_banner {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-position: center right;
+  background-repeat: no-repeat;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+}
+#carousel-wrapper_banner.anim-next {
+  pointer-events: none;
+}
+#carousel-wrapper_banner.anim-next #current-option-text1_banner {
+  animation: next-text 2s;
+}
+#carousel-wrapper_banner.anim-next #current-option-text2_banner {
+  animation: next-text 2s;
+}
+#carousel-wrapper_banner.anim-next #image_banner {
+  animation: previous-image 3s;
+}
+#carousel-wrapper_banner.anim-previous {
+  pointer-events: none;
+}
+#carousel-wrapper_banner.anim-previous #current-option-text1_banner {
+  animation: previous-text 2s;
+}
+#carousel-wrapper_banner.anim-previous #current-option-text2_banner {
+  animation: previous-text 2s;
+}
+#carousel-wrapper_banner.anim-previous #image_banner {
+  animation: previous-image 3s;
+}
+
+@keyframes previous-text {
+  from, 50%, to {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+@keyframes next-text {
+  from, 50%, to {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+@keyframes previous-image {
+  from, 50%, to {
+    height: 100%;
+  }
+  25%, 75% {
+    height: 0%;
+  }
+}

@@ -1,0 +1,218 @@
+#decor-steps__step0 {
+  background-color: rgb(243, 244, 246);
+  padding: 0;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  height: 200px;
+  transform: translate(600px);
+}
+#decor-steps__step1 {
+  background-color: rgb(243, 244, 246);
+  padding: 0;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  height: 200px;
+  transform: translate(800px);
+}
+#decor-steps__step2 {
+  background-color: rgb(243, 244, 246);
+  padding: 0;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  height: 100px;
+  transform: translate(1000px);
+}
+#decor-steps__step3 {
+  background-color: rgb(243, 244, 246);
+  padding: 0;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  height: 10px;
+  transform: translate(800px);
+}
+.main-slider {
+  width: 100vw;
+  padding-top: 1vw;
+  background-color: #f3f4f6;
+}
+.header-banner__pagination-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-slider__pagination {
+  font-size: 16px;
+  line-height: 24px;
+  color: #696a6c;
+}
+#carousel-wrapper_banner {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+
+  #menu_banner {
+    height: 380px;
+    width: 100%;
+    overflow: hidden;
+    font-weight: 700;
+    line-height: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    position: relative;
+
+    #current-option_banner {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      overflow: hidden;
+
+      #current-option-text1_banner {
+        max-width: 520px;
+        max-height: 255px;
+        font-size: 40px;
+        line-height: 1em;
+        font-weight: 700;
+        color: #ff0508;
+        overflow: hidden;
+        background-color: rgb(243, 244, 246);
+        z-index: 3;
+      }
+
+      #current-option-text2_banner {
+        margin-top: auto;
+        margin-bottom: 0;
+        padding-bottom: 40px;
+        max-width: 400px;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000;
+        z-index: 2;
+        font-weight: 400;
+      }
+    }
+
+    #previous-option_banner {
+      width: 2.5rem;
+      height: 2.5rem;
+      border: none;
+      display: flex;
+      cursor: pointer;
+      background: url("../assets/img/left_arrow_i3s1ev6wq5q8.svg");
+      background-size: cover;
+      background-color: #ffffff;
+      position: relative;
+      transform: translate(-100px, 150px);
+      transition: 2s ease-in-out;
+      z-index: 2;
+    }
+
+    #next-option_banner {
+      width: 2.5rem;
+      height: 2.5rem;
+      border: none;
+      display: flex;
+      cursor: pointer;
+      background: url("../assets/img/left_arrow_i3s1ev6wq5q8.svg");
+      background-size: cover;
+      position: relative;
+      transform: translate(-90px, 150px) rotate(180deg);
+      transition: 2s ease-in-out;
+      z-index: 2;
+    }
+  }
+
+  #image_banner {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-position: center right;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+  }
+
+  &.anim-next {
+    pointer-events: none;
+
+    #current-option-text1_banner {
+      animation: next-text 2s;
+    }
+
+    #current-option-text2_banner {
+      animation: next-text 2s;
+    }
+
+    #image_banner {
+      animation: previous-image 3s;
+    }
+  }
+
+  &.anim-previous {
+    pointer-events: none;
+
+    #current-option-text1_banner {
+      animation: previous-text 2s;
+    }
+
+    #current-option-text2_banner {
+      animation: previous-text 2s;
+    }
+
+    #image_banner {
+      animation: previous-image 3s;
+    }
+  }
+}
+
+@keyframes previous-text {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes next-text {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes previous-image {
+  from,
+  50%,
+  to {
+    height: 100%;
+  }
+  25%,
+  75% {
+    height: 0%;
+  }
+}
