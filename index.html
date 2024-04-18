@@ -15,7 +15,7 @@
   <header>
     <!-- Хедер топ - Оля -->
     <div class="header-top">
-      <!-- <section class="header-top wrapper"> -->
+      <div class="header-top__leftblock">
         <nav class="header-top__directions">
           <ul class="header-top__list">
             <li>
@@ -23,70 +23,70 @@
                 <img
                   src="./assets/img/header-top/menu-dots-black.svg"
                   alt="Directions"
-                  class="header-top__directions-icon red icon"
+                  class="header-top__directions-icon header-top__icon red "
                 />
-                <span class="header-top__directions-text header-top__text red"
+                <span class="header-top__directions-text header-top__hover red"
                   >Направления</span
                 >
               </a>
-              <ul class="header-top__menu">
+               <!-- <ul class="header-top__menu">
                 <li>
-                  <h2 class="header-top__menu-title">Финуслуги</h2>
-                  <p class="header-top__menu-text">
+                  <h2>Финуслуги</h2>
+                  <p>
                     Финуслуги - маркетплейс финансовых услуг от Мосбиржи,
                     платформа №1 в реестре ЦБ РФ
                   </p>
                 </li>
                 <li>
-                  <h2 class="header-top__menu-title">Школа Московской биржи</h2>
-                  <p class="header-top__menu-text">
+                  <h2>Школа Московской биржи</h2>
+                  <p>
                     Московская биржа рассказывает начинающим инвесторам: как
                     инвестировать на бирже с умом и как грамотно использовать
                     финансовые инструменты.
                   </p>
                 </li>
                 <li>
-                  <h2 class="header-top__menu-title">
+                  <h2>
                     Национальный Клиринговый Центр
                   </h2>
-                  <p class="header-top__menu-text">
+                  <p>
                     Услуги центрального контрагента и клиринговой организации
                   </p>
                 </li>
                 <li>
-                  <h2 class="header-top__menu-title">
+                  <h2>
                     Национальная Товарная Биржа
                   </h2>
-                  <p class="header-top__menu-text">
+                  <p>
                     Организация биржевого товарного рынка в России
                   </p>
                 </li>
                 <li>
-                  <h2 class="header-top__menu-title">Биржа для бизнеса</h2>
-                  <p class="header-top__menu-text">
+                  <h2>Биржа для бизнеса</h2>
+                  <p>
                     Биржевые инструменты и сервисы, которые помогут вашему бизнесу
                     расти
                   </p>
                 </li>
                 <li>
-                  <h2 class="header-top__menu-title">
+                  <h2>
                     Национальный расчетный депозитарий
                   </h2>
-                  <p class="header-top__menu-text">
+                  <p>
                     Услуги центрального депозитария, расчетного банка и торгового
                     репозитария
                   </p>
                 </li>
                 <li>
-                  <h2 class="header-top__menu-title">
+                  <h2>
                     Венчурный фонд МБ Инновации
                   </h2>
-                  <p class="header-top__menu-text">
+                  <p>
                     Оказываем содействие в развитии инновационных технологий
                     финансового рынка России
                   </p>
                 </li>
-              </ul>
+              </ul>  -->
             </li>
           </ul>
         </nav>
@@ -95,38 +95,38 @@
             <img
               src="./assets/img/header-top/search-black.svg"
               alt="search"
-              class="header-top__search-icon header-top__text red icon"
+              class="header-top__search-icon header-top__text red header-top__icon"
             />
           </a>
           <input
             type="search"
             placeholder="Поиск"
-            class="header-top__search-text header-top__text"
+            class="header-top__search-text header-top__hover"
             name="searchForm"
             value=""
           />
         </form>
-        <div class="header-top__container">
-          <div class="header-top__date">
-            <ul class="header-top__nav">
+      </div>
+      <div class="header-top__rightblock">
+          <div class="header-top__date"></div>
+          <ul class="header-top__nav">
               <li>
                 <a
                   href="/"
-                  class="header-top__link header-top__hover header-top__link-left"
+                  class="header-top__link-entry header-top__hover"
                   >Вход</a
                 >
               </li>
               <li>
-                <a href="/" class="header-top__link header-top__hover"
+                <a href="/" class="header-top__link-registr header-top__hover"
                   >Регистрация</a
                 >
               </li>
-            </ul>
-          </div>
+          </ul>
           <div class="header-top__cart">
             <a href="/">
               <img
-                class="header-top__cart-image red icon"
+                class="header-top__cart-image red header-top__icon"
                 src="./assets/img/header-top/shopping-cart-black.svg"
                 alt="Shopping cart"
               />
@@ -134,17 +134,17 @@
           </div>
           <div class="header-top__lang">
             <a href="/">
-              <span class="header-top__hover">Ru</span>
+              <span class="header-top__lang-ru  header-top__hover">Ru</span>
             </a>
             <span>/</span>
             <a href="/">
-              <span class="header-top__hover">En</span>
+              <span class="header-top__lang-en header-top__hover">En</span>
             </a>
           </div>
-        </div>
-      <!-- </section> -->
-      <hr class="line" />
+      </div>
     </div>
+    <hr class="header-top__line" />
+    
   
     <!-- Хедер языки -  -->
     <div class="header-languages"></div>
@@ -382,6 +382,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+  <script src="js/header-top.js"></script>
   <script src="js/header-slider.js"></script>
   <script src="js/header-links.js"></script>
   <script src="https://cryptorank.io/widget/marquee.js"></script>
