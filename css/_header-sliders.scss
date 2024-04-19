@@ -1,89 +1,127 @@
 .header-slider {
-    display: flex;
-    gap: 8px;
-    padding: 16px;
-    border-radius: 8px;
-    background-color: #13161c;
-    max-width: 1500px;
-  
-  }
-  
-  .quotes-container {
-    display: flex;
-    background-color: #18181f;
-    color: white;
-    min-width: 0;
-  
-  }
-  
-  .header-quote {
-    display: flex;
-    justify-content: space-between;
-    gap: 8px;
-    background-color: #343537;
-    color: #797c82;
-  }
-  
-  .button-quote {
-    appearance: none;
-    box-sizing: border-box;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-family: inherit;
-    font-weight: 500;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    text-decoration: none;
-    position: relative;
-    border-width: 2px;
-    border-style: solid;
-  
-  }
-  
-  #vzleti-btn {
-    min-width: 127px;
-    min-height: 36px;
-    border: 2px solid #343537;
-  }
-  
-  #padeniya-btn {
-    min-width: 127px;
-    min-height: 36px;
-    background-color: #343537;
-    color: #797c82;
-  }
-  
-  #indeksi-btn {
-    min-width: 127px;
-    min-height: 36px;
-    background-color: #343537;
-    color: #797c82;
-  }
-  
-  .quotes-list {
-    display: flex;
-    min-width: 0;
-    background-color: #13161c;
-  }
-  
-  
-  .cr-widget-marquee-container {
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    padding: 10px;
-    border-radius: 0!important;
-  }
-  
-  .cr-widget-marquee-container__dark {
+  display: flex;
+  gap: 8px;
+  padding: 16px;
+  border-radius: 8px;
   background-color: #13161c;
-  }
-  
-  
-  .cr-marquee-label {
-    display: none;
+  max-width: 1500px;
+}
+
+.quotes-container {
+  display: flex;
+  background-color: #18181f;
+  color: white;
+  min-width: 0;
+
+}
+
+.header-quote {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  background-color: #343537;
+  color: #797c82;
+  max-width: 380px;
+}
+
+.button-quote {
+  appearance: none;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  position: relative;
+  border-width: 2px;
+  border-style: solid;
+
+}
+
+
+#vzleti-btn,
+#padeniya-btn,
+#indeksi-btn {
+  min-width: 127px;
+  min-height: 36px;
+  border: 2px solid #343537;
+  background-color: #343537;
+  color: #797c82;
+  cursor: pointer;
+}
+
+#vzleti-btn:hover,
+#padeniya-btn:hover,
+#indeksi-btn:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+#vzleti-btn.active,
+#padeniya-btn.active,
+#indeksi-btn.active {
+  background-color: #e0e0e0;
+  color: #3a3a3a;
+}
+
+
+.quotes-list {
+  display: flex;
+  min-width: 0;
+  background-color: #13161c;
+}
+
+
+.cr-widget-marquee-container {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  padding: 10px;
+  border-radius: 0!important;
+  max-width: 1060px;
+}
+
+.cr-widget-marquee-container__dark {
+background-color: #13161c;
+}
+
+
+
+
+.cr-widget-marquee-container:before,
+.cr-widget-marquee-container:after {
     position: absolute;
-    margin-left: -999999999999999px; 
-    margin-bottom: 999999999px;
-  }
+    z-index: 1;
+    width: 72px;
+    top: 0;
+    bottom: 0;
+    content: "";
+}
+
+.cr-widget-marquee-container:before {
+    left: 0;
+    background: linear-gradient(90deg, #13161c 0%, rgba(24, 25, 27, 0) 100%);
+}
+
+.cr-widget-marquee-container:after {
+    right: 0;
+    background: linear-gradient(270deg, #13161c 0%, rgba(24, 25, 27, 0) 100%);
+}
+
+
+
+.cr-marquee-label {
+  display: none;
+  position: absolute;
+  margin-left: -999999999999999px; 
+  margin-bottom: 999999999px;
+  margin-top: 99999999px;
+}
+
+body {
+  max-width: 1500px;
+  margin: 0 auto;
+}
