@@ -107,3 +107,31 @@ const minut = dateCur.getMinutes();
 
 let now = `${dayOfWeek}, ${date} ${month} ${hour}:${minut}`;
 currentDate.textContent = now;
+
+// 6. Выпадающее меню
+// function dropdown() {
+//   document.getElementById("myDropdown").classList.toggle("header-top__dropdown-show");
+// }
+// document.getElementById("drop").addEventListener("click", dropdown);
+
+document.getElementById("drop").addEventListener("click", function (event) {
+  event.preventDefault();
+  document
+    .getElementById("myDropdown")
+    .classList.toggle("header-top__dropdown-show");
+  redDots.src = "./assets/img/header-top/cross-red.svg";
+});
+
+// Закрыть меню при щелчке за пределами
+// window.onclick = function (event) {
+//   if (!event.target.matches(".dropbtn")) {
+//     let dropdowns = document.getElementsByClassName(".dropdown-content");
+//     let i;
+//     for (i = 0; i < dropdowns.length; i++) {
+//       let openDropdown = dropdowns[i];
+//       if (openDropdown.classList.contains("show")) {
+//         openDropdown.classList.remove("show");
+//       }
+//     }
+//   }
+// };

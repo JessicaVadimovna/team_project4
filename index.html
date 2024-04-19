@@ -18,21 +18,21 @@
     <div class="header-top">
       <div class="header-top__leftblock">
         <nav class="header-top__directions">
-          <ul class="header-top__directions-main">
+          <ul class="header-top__dropdown-list">
             <li>
-              <div class="header-top__directions-list">
-              <a href="/">
+              <div class="header-top__directions-list header-top__dropdown-dropbtn">
+              <a href="/" id="drop">
                 <img
                   src="./assets/img/header-top/menu-dots-black.svg"
                   alt="Directions"
                   class="header-top__directions-icon header-top__icon "
                 />
-                <span class="header-top__directions-text header-top__hover"
+                <span class="header-top__directions-text header-top__item"
                   >Направления</span
                 >
               </a>
               </div>
-              <div class="header-top__directions-wrap">
+              <div class="header-top__directions-wrap header-top__dropdown-content" id="myDropdown">
                <ul class="header-top__directions-sub">
                 <li class="li-red">
                   <h2 class="h2-red">Финуслуги</h2>
@@ -114,7 +114,7 @@
           <input
             type="search"
             placeholder="Поиск"
-            class="header-top__search-text header-top__hover"
+            class="header-top__search-text header-top__item"
             name="searchForm"
             value=""
           />
@@ -122,16 +122,16 @@
       </div>
       <div class="header-top__rightblock">
           <div class="header-top__date"></div>
-          <ul class="header-top__nav">
+          <ul class="header-top__rightblock-nav">
               <li>
                 <a
                   href="/"
-                  class="header-top__link-entry header-top__hover"
+                  class="header-top__link-entry header-top__item"
                   >Вход</a
                 >
               </li>
               <li>
-                <a href="/" class="header-top__link-registr header-top__hover"
+                <a href="/" class="header-top__link-registr header-top__item"
                   >Регистрация</a
                 >
               </li>
@@ -147,11 +147,11 @@
           </div>
           <div class="header-top__lang">
             <a href="/">
-              <span class="header-top__lang-ru  header-top__hover">Ru</span>
+              <span class="header-top__lang-ru  header-top__item">Ru</span>
             </a>
             <span>/</span>
             <a href="/">
-              <span class="header-top__lang-en header-top__hover">En</span>
+              <span class="header-top__lang-en header-top__item">En</span>
             </a>
           </div>
       </div>

@@ -14,6 +14,7 @@
   src: url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.eot");
   src: url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.woff") format("woff"), url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.svg#Arial") format("svg");
 }
+<<<<<<< Updated upstream
 .btn.primary {
   display: inline-flex;
   align-items: center;
@@ -58,6 +59,8 @@
   background-color: #e3e4e8;
 }
 
+=======
+>>>>>>> Stashed changes
 body {
   max-width: 1500px;
   margin: 0 auto;
@@ -249,6 +252,10 @@ body {
   display: flex;
   gap: 30px;
 }
+.header-top__rightblock-nav {
+  display: flex;
+  gap: 30px;
+}
 .header-top__line {
   display: block;
   border: none;
@@ -264,9 +271,6 @@ body {
   display: flex;
   padding-left: 0;
 }
-.header-top__directions-list:hover {
-  transition: 2s ease-in;
-}
 .header-top__directions > ul {
   padding-left: 0;
 }
@@ -276,15 +280,8 @@ body {
   padding-top: 4px;
   font-size: 24px;
 }
-.header-top__directions-main > li:hover .header-top__directions-sub {
-  display: block;
-}
-.header-top__directions-sub {
-  display: none;
-}
 .header-top__directions-sub li {
   border-bottom: 1px solid black;
-  position: relative;
 }
 .header-top__directions-sub li h2 {
   padding: 10px 0 0 30px;
@@ -307,12 +304,18 @@ body {
   transition: 0.5s ease-in;
   transform: scale(1.3);
 }
-.header-top__hover {
+.header-top__item {
   font-size: 24px;
+}
+.header-top__item:hover {
+  color: #ff0508;
 }
 .header-top__date {
   opacity: 0.6;
   font-size: 24px;
+}
+.header-top__search {
+  width: auto;
 }
 .header-top__search-text {
   font-family: inherit;
@@ -322,23 +325,29 @@ body {
   font-size: 24px;
   width: 80%;
 }
-.header-top__hover:hover {
-  color: #ff0508;
+.header-top__dropdown-list {
+  position: relative;
+  display: inline-block;
 }
-.header-top__nav {
-  display: flex;
-  gap: 30px;
+.header-top__dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 2px solid white;
+  width: 50vw;
+  height: 40vh;
+  overflow: auto;
+  z-index: 101;
+}
+.header-top__dropdown-show {
+  display: block;
 }
 
-/* Колонки выпадающего меню */
-/* display: inline-block;
-    width: 30%;
-    height: 400px; */
 @media screen and (max-width: 1300px) {
   .header-top {
     padding: 22px 0px 12px 0px;
   }
-  .header-top__hover {
+  .header-top__item {
     font-size: 20px;
   }
   .header-top__date {
@@ -348,15 +357,30 @@ body {
     width: 28px;
     height: 28px;
   }
+  .header-top__directions-sub li h2 {
+    padding: 10px 0 0 30px;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 12px;
+  }
+  .header-top__directions-sub li p {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 100;
+    margin-bottom: 0;
+  }
+  .header-top__directions-arrow {
+    margin-bottom: 10px;
+  }
 }
 @media screen and (max-width: 1060px) {
   .header-top__rightblock {
     gap: 15px;
   }
-  .header-top__nav {
+  .header-top__rightblock-nav {
     gap: 15px;
   }
-  .header-top__hover {
+  .header-top__item {
     font-size: 18px;
   }
   .header-top__date {
@@ -368,7 +392,7 @@ body {
   }
 }
 @media screen and (max-width: 965px) {
-  .header-top__hover {
+  .header-top__item {
     font-size: 16px;
   }
   .header-top__date {
@@ -381,7 +405,7 @@ body {
 }
 /*менять текст Вход Регистрация на Иконки */
 @media screen and (max-width: 820px) {
-  .header-top__hover {
+  .header-top__item {
     font-size: 13px;
   }
   .header-top__date {
@@ -466,6 +490,7 @@ body {
   position: relative;
   padding: 10px;
   border-radius: 0 !important;
+<<<<<<< Updated upstream
 }
 
 .cr-widget-marquee-container__dark {
@@ -616,3 +641,17 @@ h2, .main-news__title {
 .icon p {
   margin: 0; /* Убираем отступы между абзацами */
 /*  direction: rtl; } /* Изменяем направление текста на right-to-left *//*# sourceMappingURL=styles.css.map */
+=======
+}
+
+.cr-widget-marquee-container__dark {
+  background-color: #13161c;
+}
+
+.cr-marquee-label {
+  display: none;
+  position: absolute;
+  margin-left: -999999999999999px;
+  margin-bottom: 999999999px;
+}/*# sourceMappingURL=styles.css.map */
+>>>>>>> Stashed changes
