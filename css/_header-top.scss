@@ -49,6 +49,26 @@
     &-sub {
       & li {
         border-bottom: 1px solid $black;
+        position: relative;
+        &:before {
+          content: "";
+          width: 20px;
+          height: 20px;
+          background: url("../assets/img/header-top/diagonal-arrow-right-up-black.svg")
+            center / contain no-repeat;
+          display: inline-block;
+          border-radius: 50%;
+          margin: 0 0 0 30px;
+          position: absolute;
+          bottom: 10px;
+          left: 0;
+        }
+        &:hover::before {
+          background: url("../assets/img/header-top/diagonal-arrow-right-up-red.svg")
+            center / contain no-repeat;
+          transform: scale(1.6);
+          transition: 0.5s ease-in;
+        }
 
         & h2 {
           padding: 10px 0 0 30px;
@@ -111,8 +131,7 @@
       position: absolute;
       background-color: white;
       border: 2px solid white;
-      width: 50vw;
-      // min-width: 100%;
+      width: 100vw;
       height: 40vh;
       overflow: auto;
       z-index: 101;
