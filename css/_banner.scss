@@ -1,5 +1,6 @@
 #decor-steps__step0 {
   background-color: rgb(243, 244, 246);
+  width: 250px;
   padding: 0;
   z-index: 2;
   position: absolute;
@@ -9,35 +10,31 @@
 }
 #decor-steps__step1 {
   background-color: rgb(243, 244, 246);
+  width: 100px;
   padding: 0;
   z-index: 2;
   position: absolute;
   top: 0;
   height: 200px;
-  transform: translate(800px);
+  transform: translate(500px);
 }
 #decor-steps__step2 {
   background-color: rgb(243, 244, 246);
+  width: 200px;
   padding: 0;
   z-index: 2;
   position: absolute;
   top: 0;
   height: 100px;
-  transform: translate(1000px);
-}
-#decor-steps__step3 {
-  background-color: rgb(243, 244, 246);
-  padding: 0;
-  z-index: 2;
-  position: absolute;
-  top: 0;
-  height: 10px;
   transform: translate(800px);
 }
 .main-slider {
   width: 100vw;
   padding-top: 1vw;
+  padding-left: 16px;
   background-color: #f3f4f6;
+  box-sizing: border-box;
+  max-width: 1500px;
 }
 .header-banner__pagination-wrapper {
   display: flex;
@@ -48,6 +45,7 @@
   font-size: 16px;
   line-height: 24px;
   color: #696a6c;
+  max-width: 1600px;
 }
 #carousel-wrapper_banner {
   width: auto;
@@ -59,7 +57,7 @@
   overflow: hidden;
 
   #menu_banner {
-    height: 380px;
+    height: 480px;
     width: 100%;
     overflow: hidden;
     font-weight: 700;
@@ -116,7 +114,6 @@
       background-color: #ffffff;
       position: relative;
       transform: translate(-100px, 150px);
-      transition: 2s ease-in-out;
       z-index: 2;
     }
 
@@ -130,7 +127,6 @@
       background-size: cover;
       position: relative;
       transform: translate(-90px, 150px) rotate(180deg);
-      transition: 2s ease-in-out;
       z-index: 2;
     }
   }
@@ -150,11 +146,11 @@
     pointer-events: none;
 
     #current-option-text1_banner {
-      animation: next-text 2s;
+      animation: next-text 3s;
     }
 
     #current-option-text2_banner {
-      animation: next-text 2s;
+      animation: next-text 3s;
     }
 
     #image_banner {
@@ -166,11 +162,11 @@
     pointer-events: none;
 
     #current-option-text1_banner {
-      animation: previous-text 2s;
+      animation: previous-text 3s;
     }
 
     #current-option-text2_banner {
-      animation: previous-text 2s;
+      animation: previous-text 3s;
     }
 
     #image_banner {
@@ -214,5 +210,148 @@
   25%,
   75% {
     height: 0%;
+  }
+}
+
+@media (min-width: 1120px) and (max-width: 1380.01px) {
+  #decor-steps__step0 {
+    width: 250px;
+    height: 200px;
+    transform: translate(300px);
+  }
+  #decor-steps__step1 {
+    width: 100px;
+    height: 100px;
+    transform: translate(300px);
+  }
+  #decor-steps__step2 {
+    height: 100px;
+    width: 200px;
+    transform: translate(500px);
+  }
+}
+@media (min-width: 1320px) and (max-width: 1380px) {
+  #decor-steps__step0 {
+    width: 250px;
+    transform: translate(500px);
+  }
+  #decor-steps__step1 {
+    width: 100px;
+    transform: translate(500px);
+  }
+  #decor-steps__step2 {
+    width: 200px;
+    transform: translate(700px);
+  }
+}
+@media (min-width: 1100px) and (max-width: 1319.99px) {
+  #decor-steps__step0 {
+    width: 250px;
+    transform: translate(300px);
+  }
+  #decor-steps__step1 {
+    width: 100px;
+    transform: translate(400px);
+  }
+  #decor-steps__step2 {
+    width: 200px;
+    transform: translate(500px);
+  }
+}
+@media (min-width: 700px) and (max-width: 1099.99px) {
+  #decor-steps__step0 {
+    transform: translate(100px);
+  }
+  #decor-steps__step1 {
+    width: 100px;
+    transform: translate(0px);
+  }
+  #decor-steps__step2 {
+    width: 200px;
+    transform: translate(250px);
+  }
+  .main-slider__content {
+    display: flex;
+    flex-direction: column;
+  }
+  #carousel-wrapper_banner
+    #menu_banner
+    #current-option_banner
+    #current-option-text2_banner {
+    margin-top: 0;
+  }
+}
+@media (min-width: 500px) and (max-width: 699.99px) {
+  .header-banner__pagination-wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  #carousel-wrapper_banner
+    #menu_banner
+    #current-option_banner
+    #current-option-text2_banner {
+    margin-top: 0;
+  }
+  #decor-steps__step0 {
+    transform: translate(0px);
+  }
+  #decor-steps__step1 {
+    width: 100px;
+    transform: translate(0, 100px);
+  }
+  #decor-steps__step2 {
+    width: 200px;
+    transform: translate(100px, 150px);
+  }
+
+  #carousel-wrapper_banner #menu_banner {
+    height: 800px;
+  }
+  #carousel-wrapper_banner #menu_banner #next-option_banner {
+    transform: translate(-20px, -220px) rotate(180deg);
+  }
+  #carousel-wrapper_banner #menu_banner #previous-option_banner {
+    transform: translate(-30px, -220px);
+  }
+  #carousel-wrapper_banner #image_banner {
+    background-size: 100% 45%;
+  }
+}
+@media screen and (max-width: 499.99px) {
+  .header-banner__pagination-wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  #carousel-wrapper_banner
+    #menu_banner
+    #current-option_banner
+    #current-option-text2_banner {
+    margin-top: 0;
+  }
+  #decor-steps__step0 {
+    transform: translate(0px);
+  }
+  #decor-steps__step1 {
+    width: 100px;
+    transform: translate(0, 100px);
+  }
+  #decor-steps__step2 {
+    width: 200px;
+    transform: translate(100px, 160px);
+  }
+
+  #carousel-wrapper_banner #menu_banner {
+    height: 700px;
+  }
+  #carousel-wrapper_banner #menu_banner #next-option_banner {
+    transform: translate(-20px, -220px) rotate(180deg);
+  }
+  #carousel-wrapper_banner #menu_banner #previous-option_banner {
+    transform: translate(-30px, -220px);
+  }
+  #carousel-wrapper_banner #image_banner {
+    background-size: 100% 30%;
   }
 }

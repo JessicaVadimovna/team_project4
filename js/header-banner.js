@@ -82,28 +82,43 @@ currentOptionText2.innerText = text2_options[i];
 currentOptionImage.style.backgroundImage = "url(" + image_options[i] + ")";
 mainMenu.style.background = color_options[i];
 number_paginationText.innerText = number_pagination[i];
-optionNext.onclick = function () {
-  i = i + 1;
-  i = i % text1_options.length;
-  currentOptionText1.dataset.nextText = text1_options[i];
 
-  currentOptionText2.dataset.nextText = text2_options[i];
-  number_paginationText.dataset.nextText = number_pagination[i];
+setInterval(
+  (optionNext.onclick = function () {
+    i = i + 1;
+    i = i % text1_options.length;
+    currentOptionText1.dataset.nextText = text1_options[i];
 
-  mainMenu.style.background = color_options[i];
-  carousel.classList.add("anim-next");
+    currentOptionText2.dataset.nextText = text2_options[i];
+    number_paginationText.dataset.nextText = number_pagination[i];
 
-  setTimeout(() => {
-    currentOptionImage.style.backgroundImage = "url(" + image_options[i] + ")";
-  }, 455);
+    mainMenu.style.background = color_options[i];
+    carousel.classList.add("anim-next");
 
-  setTimeout(() => {
-    currentOptionText1.innerText = text1_options[i];
-    currentOptionText2.innerText = text2_options[i];
-    number_paginationText.innerText = number_pagination[i];
-    carousel.classList.remove("anim-next");
-  }, 650);
-};
+    setTimeout(() => {
+      currentOptionImage.style.backgroundImage =
+        "url(" + image_options[i] + ")";
+    }, 455);
+
+    setTimeout(() => {
+      currentOptionText1.innerText = text1_options[i];
+      currentOptionText2.innerText = text2_options[i];
+      number_paginationText.innerText = number_pagination[i];
+      carousel.classList.remove("anim-next");
+    }, 650);
+  }),
+  9000
+);
+
+//var timer = 0;
+//makeTimer(); //Создаем интервал
+//function makeTimer() {
+//clearInterval(timer); //Очистим интервал, это позволит прервать его работу и отменить перелистывание
+//timer = setInterval(function () {
+// i++;
+//optionNext_();
+// }, 5000);
+//}
 
 optionPrevious.onclick = function () {
   if (i === 0) {
