@@ -15,8 +15,8 @@ inputName.addEventListener("blur", function () {
 });
 
 // 2. Окрашивание иконок (лупа и корзина) в красный цвет при наведении
-const redBusket = document.querySelector(".header-top__cart-image");
-const redSearch = document.querySelector(".header-top__search-icon");
+const redBusket = document.getElementById("cart");
+const redSearch = document.getElementById("search");
 
 //Добавляем обработчики событий mouseenter и mouseleave на Лупу
 redSearch.addEventListener("mouseenter", () => {
@@ -37,8 +37,8 @@ redBusket.addEventListener("mouseleave", () => {
 
 // 3. Окрашивание точки и Направления в красный цвет при наведении
 const redDirDots = document.querySelector(".header-top__directions-list");
-const redDots = document.querySelector(".header-top__directions-icon");
-const redDirText = document.querySelector(".header-top__directions-text");
+const redDots = document.getElementById("dots");
+const redDirText = document.getElementById("dir-tittle");
 
 //Добавляем обработчики событий mouseenter и mouseleave на точки и Направления
 redDirDots.addEventListener("mouseenter", () => {

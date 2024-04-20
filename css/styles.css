@@ -311,13 +311,6 @@ body {
 .header-top__directions-sub li:last-child {
   border-bottom: none;
 }
-.header-top__directions-arrow {
-  margin: 0 0 30px 30px;
-}
-.header-top__directions-arrow:hover {
-  transition: 0.5s ease-in;
-  transform: scale(1.3);
-}
 .header-top__item {
   font-size: 24px;
 }
@@ -339,16 +332,11 @@ body {
   font-size: 24px;
   width: 80%;
 }
-.header-top__dropdown-list {
-  position: relative;
-  display: inline-block;
-}
 .header-top__dropdown-content {
   display: none;
   position: absolute;
   background-color: white;
-  border: 2px solid white;
-  width: 100vw;
+  inline-size: 100%;
   height: 40vh;
   overflow: auto;
   z-index: 101;
