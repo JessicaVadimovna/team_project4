@@ -52,30 +52,17 @@ redDirDots.addEventListener("mouseleave", () => {
 });
 
 // 4. Окрашивание элементов выпадающего списка в красный цвет при наведении
-const redLi = document.querySelector(".li-red");
-const redH2s = document.querySelectorAll(".h2-red");
+const redLi = document.querySelectorAll(".li-red");
 const redArrows = document.querySelectorAll(".header-top__directions-arrow");
 
-// Добавляем обработчики событий mouseenter и mouseleave на элементы выпадающего списка
-redArrows.forEach((redArrow) => {
-  redLi.addEventListener("mouseenter", () => {
-    redArrow.src = "./assets/img/header-top/diagonal-arrow-right-up-red.svg";
+redLi.forEach((el) => {
+  const redH2s = el.querySelector(".h2-red");
+  el.addEventListener("mouseenter", () => {
+    redH2s.style.color = "red";
   });
-});
-redH2s.forEach((redH2) => {
-  redLi.addEventListener("mouseenter", () => {
-    redH2.style.color = "red";
-  });
-});
 
-redArrows.forEach((redArrow) => {
-  redLi.addEventListener("mouseleave", () => {
-    redArrow.src = "./assets/img/header-top/diagonal-arrow-right-up-black.svg";
-  });
-});
-redH2s.forEach((redH2) => {
-  redLi.addEventListener("mouseleave", () => {
-    redH2.style.color = "black";
+  el.addEventListener("mouseleave", () => {
+    redH2s.style.color = "black";
   });
 });
 
@@ -123,15 +110,15 @@ document.getElementById("drop").addEventListener("click", function (event) {
 });
 
 // Закрыть меню при щелчке за пределами
-// window.onclick = function (event) {
-//   if (!event.target.matches(".dropbtn")) {
-//     let dropdowns = document.getElementsByClassName(".dropdown-content");
-//     let i;
-//     for (i = 0; i < dropdowns.length; i++) {
-//       let openDropdown = dropdowns[i];
-//       if (openDropdown.classList.contains("show")) {
-//         openDropdown.classList.remove("show");
-//       }
-//     }
-//   }
-// };
+document.addEventListener("click", function (event) {
+  if (!event.target.matches("#myDropdown")) {
+    let dropdowns = document.getElementsByClassName(".dropdown-content");
+    let i;
+    for (i = 0; i < dropdowns.length; i++) {
+      let openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains("show")) {
+        openDropdown.classList.remove("show");
+      }
+    }
+  }
+});
