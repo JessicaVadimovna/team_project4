@@ -42,8 +42,8 @@
     &-text {
       display: inline-block;
       vertical-align: middle;
-      // padding-top: 4px;
       font-size: 24px;
+      // padding-top: 4px;
     }
 
     &-sub {
@@ -87,13 +87,13 @@
         border-bottom: none;
       }
     }
-    &-arrow {
-      margin: 0 0 30px 30px;
-      &:hover {
-        transition: 0.5s ease-in;
-        transform: scale(1.3);
-      }
-    }
+    // &-arrow {
+    //   margin: 0 0 30px 30px;
+    //   &:hover {
+    //     transition: 0.5s ease-in;
+    //     transform: scale(1.3);
+    //   }
+    // }
   }
 
   &__item {
@@ -121,28 +121,15 @@
   }
 
   &__dropdown {
-    &-list {
-      position: relative;
-      display: inline-block;
-    }
-
     &-content {
       display: none;
       position: absolute;
       background-color: white;
-      border: 2px solid white;
-      width: 100vw;
+      inline-size: 100%;
       height: 40vh;
       overflow: auto;
       z-index: 101;
     }
-
-    // &-dropbtn {
-    //   &:hover {
-    //     transition: 2s ease-in;
-    //     color: blue;
-    //   }
-    // }
 
     &-show {
       display: block;

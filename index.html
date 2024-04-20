@@ -17,23 +17,21 @@
     <!-- Хедер топ - Оля -->
     <div class="header-top">
       <div class="header-top__leftblock">
-        <nav class="header-top__directions">
-          <ul class="header-top__dropdown-list">
-            <li>
-              <div class="header-top__directions-list header-top__dropdown-dropbtn">
-              <a href="/" id="drop">
-                <img
-                  src="./assets/img/header-top/menu-dots-black.svg"
-                  alt="Directions"
-                  class="header-top__directions-icon header-top__icon "
-                />
-                <span class="header-top__directions-text header-top__item"
-                  >Направления</span
-                >
-              </a>
-              </div>
-              <div class="header-top__directions-wrap header-top__dropdown-content" id="myDropdown">
-               <ul class="header-top__directions-sub">
+        <div class="header-top__directions">
+          <div class="header-top__directions-list header-top__dropdown-dropbtn">
+            <a href="/" id="drop">
+              <img
+                src="./assets/img/header-top/menu-dots-black.svg"
+                alt="Directions"
+                class="header-top__icon" id="dots"
+              />
+              <span class="header-top__item" id="dir-tittle"
+                >Направления</span
+              >
+            </a>
+          </div>
+          <div class="header-top__dropdown-content" id="myDropdown">
+            <ul class="header-top__directions-sub">
                 <li class="li-red">
                   <h2 class="h2-red">Финуслуги</h2>
                   <p>
@@ -96,18 +94,15 @@
                     финансового рынка России
                   </p>
                   
-              </ul> 
-            </div>  
-
-            </li>
-          </ul>
-        </nav>
+            </ul> 
+          </div>  
+        </div>
         <form class="header-top__search" name="headerForm">
           <a href="/">
             <img
               src="./assets/img/header-top/search-black.svg"
               alt="search"
-              class="header-top__search-icon header-top__text header-top__icon"
+              class="header-top__icon" id="search"
             />
           </a>
           <input
@@ -138,7 +133,7 @@
           <div class="header-top__cart">
             <a href="/">
               <img
-                class="header-top__cart-image header-top__icon"
+                class="header-top__icon" id="cart"
                 src="./assets/img/header-top/shopping-cart-black.svg"
                 alt="Shopping cart"
               />
