@@ -1,21 +1,24 @@
 @charset "UTF-8";
+
 @font-face {
   font-family: "FavoritPro-Regular";
   src: url("https://db.onlinewebfonts.com/t/7227d22dc5e8d12716f1f1733f0b364c.eot");
   src: url("https://db.onlinewebfonts.com/t/7227d22dc5e8d12716f1f1733f0b364c.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/7227d22dc5e8d12716f1f1733f0b364c.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/7227d22dc5e8d12716f1f1733f0b364c.woff") format("woff"), url("https://db.onlinewebfonts.com/t/7227d22dc5e8d12716f1f1733f0b364c.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/7227d22dc5e8d12716f1f1733f0b364c.svg#FavoritPro-Regular") format("svg");
 }
+
 @font-face {
   font-family: "Roboto";
   src: url("https://db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot");
   src: url("https://db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff") format("woff"), url("https://db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.svg#Roboto") format("svg");
 }
+
 @font-face {
   font-family: "Arial";
   src: url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.eot");
   src: url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.woff") format("woff"), url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.svg#Arial") format("svg");
 }
-<<<<<<< Updated upstream
-.header-slider {
+
+<<<<<<< Updated upstream .header-slider {
   display: flex;
   gap: 8px;
   padding: 16px;
@@ -100,12 +103,12 @@
   overflow: hidden;
   position: relative;
   padding: 10px;
-  border-radius: 0!important;
+  border-radius: 0 !important;
   max-width: 1060px;
 }
 
 .cr-widget-marquee-container__dark {
-background-color: #13161c;
+  background-color: #13161c;
 }
 
 
@@ -113,22 +116,22 @@ background-color: #13161c;
 
 .cr-widget-marquee-container:before,
 .cr-widget-marquee-container:after {
-    position: absolute;
-    z-index: 1;
-    width: 72px;
-    top: 0;
-    bottom: 0;
-    content: "";
+  position: absolute;
+  z-index: 1;
+  width: 72px;
+  top: 0;
+  bottom: 0;
+  content: "";
 }
 
 .cr-widget-marquee-container:before {
-    left: 0;
-    background: linear-gradient(90deg, #13161c 0%, rgba(24, 25, 27, 0) 100%);
+  left: 0;
+  background: linear-gradient(90deg, #13161c 0%, rgba(24, 25, 27, 0) 100%);
 }
 
 .cr-widget-marquee-container:after {
-    right: 0;
-    background: linear-gradient(270deg, #13161c 0%, rgba(24, 25, 27, 0) 100%);
+  right: 0;
+  background: linear-gradient(270deg, #13161c 0%, rgba(24, 25, 27, 0) 100%);
 }
 
 
@@ -140,14 +143,12 @@ background-color: #13161c;
 .cr-marquee-label {
   display: none;
   position: absolute;
-  margin-left: -999999999999999px; 
+  margin-left: -999999999999999px;
   margin-bottom: 999999999px;
   margin-top: 99999999px;
 }
 
-=======
->>>>>>> Stashed changes
-body {
+=======>>>>>>>Stashed changes body {
   max-width: 1500px;
   margin: 0 auto;
 }
@@ -330,14 +331,17 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .header-top__leftblock {
   display: flex;
   gap: 10px;
 }
+
 .header-top__rightblock {
   display: flex;
   gap: 30px;
 }
+
 .header-top__line {
   display: block;
   border: none;
@@ -345,64 +349,80 @@ body {
   margin: 0em 0;
   padding: 0;
 }
+
 .header-top__icon {
   width: 36px;
   height: 36px;
 }
+
 .header-top__directions-list {
   display: flex;
   padding-left: 0;
 }
+
 .header-top__directions-list:hover {
   transition: 2s ease-in;
 }
-.header-top__directions > ul {
+
+.header-top__directions>ul {
   padding-left: 0;
 }
+
 .header-top__directions-text {
   display: inline-block;
   vertical-align: middle;
   padding-top: 4px;
   font-size: 24px;
 }
-.header-top__directions-main > li:hover .header-top__directions-sub {
+
+.header-top__directions-main>li:hover .header-top__directions-sub {
   display: block;
 }
+
 .header-top__directions-sub {
   display: none;
 }
+
 .header-top__directions-sub li {
   border-bottom: 1px solid black;
   position: relative;
 }
+
 .header-top__directions-sub li h2 {
   padding: 10px 0 0 30px;
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 30px;
 }
+
 .header-top__directions-sub li p {
   line-height: 20px;
   font-weight: 100;
   padding: 0 0 20px 30px;
 }
+
 .header-top__directions-sub li:last-child {
   border-bottom: none;
 }
+
 .header-top__directions-arrow {
   margin: 0 0 30px 30px;
 }
+
 .header-top__directions-arrow:hover {
   transition: 0.5s ease-in;
   transform: scale(1.3);
 }
+
 .header-top__hover {
   font-size: 24px;
 }
+
 .header-top__date {
   opacity: 0.6;
   font-size: 24px;
 }
+
 .header-top__search-text {
   font-family: inherit;
   font-size: inherit;
@@ -411,9 +431,11 @@ body {
   font-size: 24px;
   width: 80%;
 }
+
 .header-top__hover:hover {
   color: #ff0508;
 }
+
 .header-top__nav {
   display: flex;
   gap: 30px;
@@ -427,60 +449,75 @@ body {
   .header-top {
     padding: 22px 0px 12px 0px;
   }
+
   .header-top__hover {
     font-size: 20px;
   }
+
   .header-top__date {
     font-size: 20px;
   }
+
   .header-top__icon {
     width: 28px;
     height: 28px;
   }
 }
+
 @media screen and (max-width: 1060px) {
   .header-top__rightblock {
     gap: 15px;
   }
+
   .header-top__nav {
     gap: 15px;
   }
+
   .header-top__hover {
     font-size: 18px;
   }
+
   .header-top__date {
     font-size: 18px;
   }
+
   .header-top__icon {
     width: 25px;
     height: 25px;
   }
 }
+
 @media screen and (max-width: 965px) {
   .header-top__hover {
     font-size: 16px;
   }
+
   .header-top__date {
     font-size: 16px;
   }
+
   .header-top__icon {
     width: 22px;
     height: 22px;
   }
 }
+
 /*менять текст Вход Регистрация на Иконки */
 @media screen and (max-width: 820px) {
   .header-top__hover {
     font-size: 13px;
   }
+
   .header-top__date {
     font-size: 13px;
   }
+
   .header-top__icon {
     width: 18px;
     height: 18px;
   }
 }
+
 .quotes-container {
   background-color: #1e1e1e;
   color: white;
@@ -519,9 +556,48 @@ body {
 }
 
 .positive {
-  color: #00c853; /* Зеленый цвет */
+  color: #00c853;
+  /* Зеленый цвет */
 }
 
 .negative {
-  color: #d50000; /* Красный цвет */
-}/*# sourceMappingURL=styles.css.map */
+  color: #d50000;
+  /* Красный цвет */
+}
+
+.map {
+  width: 100%;
+  min-height: 400px;
+}
+
+.map_instalation {
+  position: relative;
+  overflow: hidden;
+}
+
+.map_instalation_link {
+  color: #eee;
+  font-size: 12px;
+  position: absolute;
+  top: 0px;
+}
+
+.map_instalation_link_search {
+  color: #eee;
+  font-size: 12px;
+  position: absolute;
+  top: 14px;
+}
+
+.map_instalation_link_search_frame {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+}
+
+.map-description {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */
