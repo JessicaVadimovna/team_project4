@@ -7,6 +7,9 @@
 @import "header-top";
 @import "banner";
 @import "header-sliders";
+@import "mapfooter";
+
+
 
 //-----------main-animations-------------------------
 body {
@@ -126,12 +129,14 @@ h2,
 
 .slider-track {
   display: flex;
-  animation: slideRight 20s linear infinite; /* Подстройте длительность анимации по необходимости */
+  animation: slideRight 20s linear infinite;
+  /* Подстройте длительность анимации по необходимости */
 }
 
 .forecast-item {
   flex: 0 0 auto;
-  width: 300px; /* Установите ширину для каждого элемента прогноза */
+  width: 300px;
+  /* Установите ширину для каждого элемента прогноза */
   background-color: #f0f0f0;
   border-radius: 8px;
   padding: 15px;
