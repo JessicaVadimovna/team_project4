@@ -8,7 +8,6 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css" />
-  <link rel="shortcut icon" type="image/icon" href="assets/img/moexdata.svg"/>
   <title>Московская Биржа</title>
 </head>
 
@@ -17,142 +16,133 @@
     <!-- Хедер топ - Оля -->
     <div class="header-top">
       <div class="header-top__leftblock">
-        <div class="header-top__directions">
-          <div class="header-top__directions-list header-top__dropdown-dropbtn">
-            <a href="/" id="drop">
-              <img
-                src="./assets/img/header-top/menu-dots-black.svg"
-                alt="Directions"
-                class="header-top__icon" id="dots"
-              />
-              <span class="header-top__item" id="dir-tittle"
-                >Направления</span
-              >
-            </a>
-          </div>
-          <div class="header-top__dropdown-content" id="myDropdown">
-            <ul class="header-top__directions-sub">
-                <li class="li-red">
-                  <h2 class="h2-red">Финуслуги</h2>
-                  <p>
-                    Финуслуги - маркетплейс финансовых услуг от Мосбиржи,
-                    платформа №1 в реестре ЦБ РФ
-                  </p>
-                  
-                </li>
-                <li class="li-red">
-                  <h2 class="h2-red">Школа Московской биржи</h2>
-                  <p>
-                    Московская биржа рассказывает начинающим инвесторам: как
-                    инвестировать на бирже с умом и как грамотно использовать
-                    финансовые инструменты.
-                  </p>
-                  
-                </li>
-                <li class="li-red">
-                  <h2 class="h2-red">
-                    Национальный Клиринговый Центр
-                  </h2>
-                  <p>
-                    Услуги центрального контрагента и клиринговой организации
-                  </p>
-                  
-                </li>
-                <li class="li-red">
-                  <h2 class="h2-red">
-                    Национальная Товарная Биржа
-                  </h2>
-                  <p>
-                    Организация биржевого товарного рынка в России
-                  </p>
-                  
-                </li>
-                <li class="li-red">
-                  <h2 class="h2-red">Биржа для бизнеса</h2>
-                  <p>
-                    Биржевые инструменты и сервисы, которые помогут вашему бизнесу
-                    расти
-                  </p>
-                  
-                </li>
-                <li class="li-red">
-                  <h2 class="h2-red">
-                    Национальный расчетный депозитарий
-                  </h2>
-                  <p>
-                    Услуги центрального депозитария, расчетного банка и торгового
-                    репозитария
-                  </p>
-                  
-                </li>
-                <li class="li-red">
-                  <h2 class="h2-red">
-                    Венчурный фонд МБ Инновации
-                  </h2>
-                  <p>
-                    Оказываем содействие в развитии инновационных технологий
-                    финансового рынка России
-                  </p>
-                  
-            </ul> 
-          </div>  
-        </div>
+        <nav class="header-top__directions">
+          <ul class="header-top__directions-main">
+            <li>
+              <div class="header-top__directions-list">
+                <a href="/">
+                  <img src="./assets/img/header-top/menu-dots-black.svg" alt="Directions"
+                    class="header-top__directions-icon header-top__icon " />
+                  <span class="header-top__directions-text header-top__hover">Направления</span>
+                </a>
+              </div>
+              <div class="header-top__directions-wrap">
+                <ul class="header-top__directions-sub">
+                  <li class="li-red">
+                    <h2 class="h2-red">Финуслуги</h2>
+                    <p>
+                      Финуслуги - маркетплейс финансовых услуг от Мосбиржи,
+                      платформа №1 в реестре ЦБ РФ
+                    </p>
+                    <img class="header-top__directions-arrow  header-top__icon"
+                      src="./assets/img/header-top/diagonal-arrow-right-up-black.svg" alt="arrow">
+                  </li>
+                  <li>
+                    <h2 class="h2-red">Школа Московской биржи</h2>
+                    <p>
+                      Московская биржа рассказывает начинающим инвесторам: как
+                      инвестировать на бирже с умом и как грамотно использовать
+                      финансовые инструменты.
+                    </p>
+                    <img class="header-top__directions-arrow  header-top__icon"
+                      src="./assets/img/header-top/diagonal-arrow-right-up-black.svg" alt="arrow">
+                  </li>
+                  <li>
+                    <h2 class="h2-red">
+                      Национальный Клиринговый Центр
+                    </h2>
+                    <p>
+                      Услуги центрального контрагента и клиринговой организации
+                    </p>
+                    <img class="header-top__directions-arrow  header-top__icon"
+                      src="./assets/img/header-top/diagonal-arrow-right-up-black.svg" alt="arrow">
+                  </li>
+                  <li>
+                    <h2 class="h2-red">
+                      Национальная Товарная Биржа
+                    </h2>
+                    <p>
+                      Организация биржевого товарного рынка в России
+                    </p>
+                    <img class="header-top__directions-arrow  header-top__icon"
+                      src="./assets/img/header-top/diagonal-arrow-right-up-black.svg" alt="arrow">
+                  </li>
+                  <li>
+                    <h2 class="h2-red">Биржа для бизнеса</h2>
+                    <p>
+                      Биржевые инструменты и сервисы, которые помогут вашему бизнесу
+                      расти
+                    </p>
+                    <img class="header-top__directions-arrow  header-top__icon"
+                      src="./assets/img/header-top/diagonal-arrow-right-up-black.svg" alt="arrow">
+                  </li>
+                  <li>
+                    <h2 class="h2-red">
+                      Национальный расчетный депозитарий
+                    </h2>
+                    <p>
+                      Услуги центрального депозитария, расчетного банка и торгового
+                      репозитария
+                    </p>
+                    <img class="header-top__directions-arrow  header-top__icon"
+                      src="./assets/img/header-top/diagonal-arrow-right-up-black.svg" alt="arrow">
+                  </li>
+                  <li>
+                    <h2 class="h2-red">
+                      Венчурный фонд МБ Инновации
+                    </h2>
+                    <p>
+                      Оказываем содействие в развитии инновационных технологий
+                      финансового рынка России
+                    </p>
+                    <img class="header-top__directions-arrow  header-top__icon"
+                      src="./assets/img/header-top/diagonal-arrow-right-up-black.svg" alt="arrow">
+                  </li>
+                </ul>
+              </div>
+
+            </li>
+          </ul>
+        </nav>
         <form class="header-top__search" name="headerForm">
           <a href="/">
-            <img
-              src="./assets/img/header-top/search-black.svg"
-              alt="search"
-              class="header-top__icon" id="search"
-            />
+            <img src="./assets/img/header-top/search-black.svg" alt="search"
+              class="header-top__search-icon header-top__text header-top__icon" />
           </a>
-          <input
-            type="search"
-            placeholder="Поиск"
-            class="header-top__search-text header-top__item"
-            name="searchForm"
-            value=""
-          />
+          <input type="search" placeholder="Поиск" class="header-top__search-text header-top__hover" name="searchForm"
+            value="" />
         </form>
       </div>
       <div class="header-top__rightblock">
-          <div class="header-top__date"></div>
-          <ul class="header-top__rightblock-nav">
-              <li>
-                <a
-                  href="/"
-                  class="header-top__link-entry header-top__item"
-                  >Вход</a
-                >
-              </li>
-              <li>
-                <a href="/" class="header-top__link-registr header-top__item"
-                  >Регистрация</a
-                >
-              </li>
-          </ul>
-          <div class="header-top__cart">
-            <a href="/">
-              <img
-                class="header-top__icon" id="cart"
-                src="./assets/img/header-top/shopping-cart-black.svg"
-                alt="Shopping cart"
-              />
-            </a>
-          </div>
-          <div class="header-top__lang">
-            <a href="/">
-              <span class="header-top__lang-ru  header-top__item">Ru</span>
-            </a>
-            <span>/</span>
-            <a href="/">
-              <span class="header-top__lang-en header-top__item">En</span>
-            </a>
-          </div>
+        <div class="header-top__date"></div>
+        <ul class="header-top__nav">
+          <li>
+            <a href="/" class="header-top__link-entry header-top__hover">Вход</a>
+          </li>
+          <li>
+            <a href="/" class="header-top__link-registr header-top__hover">Регистрация</a>
+          </li>
+        </ul>
+        <div class="header-top__cart">
+          <a href="/">
+            <img class="header-top__cart-image header-top__icon" src="./assets/img/header-top/shopping-cart-black.svg"
+              alt="Shopping cart" />
+          </a>
+        </div>
+        <div class="header-top__lang">
+          <a href="/">
+            <span class="header-top__lang-ru  header-top__hover">Ru</span>
+          </a>
+          <span>/</span>
+          <a href="/">
+            <span class="header-top__lang-en header-top__hover">En</span>
+          </a>
+        </div>
       </div>
     </div>
     <hr class="header-top__line" />
-    
-  
+
+
     <!-- Хедер языки -  -->
     <div class="header-languages"></div>
     <div></div>
@@ -275,12 +265,12 @@
           </div> -->
         </div>
         <div class="header-links__burger-menu">
-          <div class="hamburger" >
+          <div class="hamburger">
             <div class="b1"></div>
             <div class="b2"></div>
             <div class="b3"></div>
           </div>
-  
+
           <div class="menu">
             <div class="menu-box">
               <ul class="ul-menu">
@@ -307,13 +297,13 @@
                 <li class="menuItem"><a href="#">Сектор компаний повышенного инвестиционного роста</a></li>
                 <li class="menuItem"><a href="#">Двусторонние сделки с ЦК</a></li>
                 <li class="menuItem"><a href="#">Торговый календарь</a></li>
-  
+
             </div>
           </div>
         </div>
       </div>
     </div>
-  
+
     <!-- Хедер ползунок - Джессика -->
     <div class="header-slider">
       <div class="quotes-container">
@@ -324,100 +314,39 @@
 
           <div id="result">
             <!-- Начало Взлёты дня -->
-            <div id="vzleti" class="widget-container">
-
+            <div id="cr-widget-marquee" style="width: 1040px; height: 40px; overflow: hidden;"
+              data-coins="bitcoin,ethereum,tether,ripple,cardano" data-theme="dark" data-show-symbol="true"
+              data-show-icon="false" data-show-period-change="true" data-period-change="24H"
+              data-api-url="https://api.cryptorank.io/v0">
+              >
             </div>
             <!-- Конец Взлёты дня -->
 
-            <!-- Начало Падения дня -->
-            <div id="padeniya" class="widget-container">
 
-            </div>
+            <!-- Начало Падения дня -->
+
             <!-- Конец Падения дня -->
-            
+
+
+
+
             <!-- Индексы начало -->
-            <div id="indeksi" class="widget-container"></div>
-            <div
-            id="cr-widget-marquee"
-            style="width: 1040px; height: 40px; overflow: hidden"
-            data-coins="bitcoin,ethereum,tether,ripple,cardano"
-            data-theme="dark"
-            data-show-symbol="true"
-            data-show-icon="false"
-            data-show-period-change="true"
-            data-period-change="24H"
-            data-api-url="https://api.cryptorank.io/v0"
-          ></div>
+
             <!-- Индексы конец -->
+
+
           </div>
         </div>
       </div>
     </div>
-  
-    
-    <!-- Хедер баннер - Маша  -->
 
-   <section class="main-slider">
-    <div class="main-slider__content">
-      <div class="main-slider__pagination-wrapper">
-        <span class="main-slider__pagination2" id = "number_pagination" data-previous-text="" data-next-text=""></span>
-        <span class="main-slider__pagination"> из 14 </span>
-      </div>
-      <div id="carousel-wrapper_banner">
-        <div id="menu_banner">
-            <div id="current-option_banner">
-              <span id="current-option-text1_banner" data-previous-text="" data-next-text=""></span>
-              <span id="current-option-text2_banner" data-previous-text="" data-next-text=""></span>
-            </div>
-            <button id="previous-option_banner"></button>
-            <button id="next-option_banner"></button>
-            <div id="image_banner">
-              <div id = "decor-steps__step0"></div>
-              <div id = "decor-steps__step1"></div>
-              <div id = "decor-steps__step2"></div>
-             
-            </div>
-        </div>
-      </div>
-</section>
-  
+    <!-- Хедер баннер - Маша  -->
+    <div class="header-banner"></div>
+
   </header>
   <main>
     <!-- Мейн погода апи- Настя  -->
-    <section class="main-weather-api">
-      <section class="main-weather-api">
-        <div class="weather-container">
-     <h2>Прогноз погоды</h2>
-     <div class="weather-slider">
-         <div class="slider-track" id="sliderTrack">
-             <!-- Здесь будут динамически добавляться элементы прогноза -->
-         </div>
-     </div>
- </div>
- 
- <div class="tomorrow"
- data-location-id="050388"
- data-language="EN"
- data-unit-system="METRIC"
- data-skin="light"
- data-widget-type="upcoming"
- style="padding-bottom:22px;position:relative;"
->
-<a
-  href="https://www.tomorrow.io/weather-api/"
-  rel="nofollow noopener noreferrer"
-  target="_blank"
-  style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"
->
-  <img
-    alt="Powered by the Tomorrow.io Weather API"
-    src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
-    width="250"
-    height="18"
-  />
-</a>
-</div>
-      </section>
+    <section class="main-weather-api"></section>
 
     <!-- Мейн графики -  -->
     <section class="main-graphics"></section>
@@ -432,120 +361,7 @@
     </section>
 
     <!-- Мейн анимации - Настя  -->
-    <section class="main-animations">
-      <div class="container d-flex ">
-        <div class="left">
-           <h2>Выберите,<br>что сделать<br>с деньгами</h2>
-           <div class="d-flex align-items-center">
-              <div class="icon">
-                 <svg xmlns="http://www.w3.org/2000/svg" width="98" height="52" viewBox="0 0 98 52" fill="none">
-                    <path d="M97.701 0.9646H33.6914V22.8142H0V52.0001H97.701V0.9646Z" fill="#FF0508" style="                       fill: #ff0508;                       fill: color(display-p3 1 0.0196 0.0314);                       fill-opacity: 1;                     "></path>
-                    <path d="M48.8343 10.8049L48.1485 10.8368C45.5329 10.9724 43.9142 12.5912 43.9142 15.2386C43.9142 17.8223 45.501 19.6086 48.1485 19.7441L48.8343 19.776V10.8049ZM48.8343 23.7153V22.4793L48.1485 22.4474C43.7467 22.2401 41.0275 19.6963 41.0275 15.2546C41.0275 10.5418 43.8185 8.37278 48.1485 8.16545L48.8343 8.13356V6.88159H51.729V8.11761L52.4148 8.1495C56.8564 8.35684 59.5757 10.4541 59.5757 15.2386C59.5757 19.6803 56.8564 22.2241 52.4148 22.4315L51.729 22.4634V23.6994H48.8343V23.7153ZM51.721 19.792L52.4068 19.7601C54.9904 19.6245 56.673 17.7665 56.673 15.2546C56.673 12.6709 54.9904 10.9884 52.4068 10.8528L51.721 10.8209V19.792ZM51.9283 45.0147V42.4708H53.6109C54.1611 42.4708 54.6077 42.2316 54.7831 41.7851L49.8311 29.9831H53.0686L56.4099 39.1057H56.9601L60.2615 29.9831H63.4272L58.9218 40.86C57.8931 43.34 56.4099 45.0226 53.5152 45.0226H51.9283V45.0147ZM62.0158 22.7823V7.74282H65.0062V20.0631H65.5564L68.9614 7.74282H74.5673V22.7823H71.577V10.4302H71.0267L67.7254 22.7823H62.0158ZM77.0872 45.0147V29.9751H80.0776V42.2954H80.6278L84.0328 29.9751H89.6786V45.0147H86.6882V32.6944H86.138L82.7968 45.0147H77.0872ZM30.2462 39.8872L33.2366 40.3018C32.479 43.4995 29.9671 45.3974 26.6977 45.3974C21.8413 45.3974 19.5766 41.8568 19.5766 37.4471C19.5766 32.9416 21.9849 29.6003 26.8412 29.6003C29.7997 29.6003 32.0723 31.0437 33.101 33.8347L30.2462 35.1106C29.5923 33.5636 28.4919 32.3594 26.6977 32.3594C23.7073 32.3594 22.6706 34.7996 22.6706 37.455C22.6706 40.1424 23.7711 42.6543 26.8332 42.6543C28.6673 42.6383 29.7997 41.5698 30.2462 39.8872ZM77.6693 22.7823V7.74282H80.6597V13.8352H86.6803V7.74282H89.6706V22.7823H86.6803V16.5544H80.6597V22.7823H77.6693ZM34.2413 45.0147V42.12H35.1743C36.4821 42.12 36.9606 41.3943 37.0004 39.2652L37.1759 30.0389V29.9672H47.7099V45.0067H44.7355V32.6944H39.9828L39.8473 39.0579C39.7436 43.2204 38.4358 45.0147 35.5093 45.0147H34.2413ZM65.5564 45.0147V29.9751H75.1255V32.6944H68.5547V45.0147H65.5564ZM7.982 45.0147V42.4708H9.66458C10.2148 42.4708 10.6614 42.2316 10.8368 41.7851L5.88477 29.9831H9.12233L12.4636 39.1057H13.0138L16.3151 29.9831H19.4809L14.9755 40.86C13.9468 43.34 12.4636 45.0226 9.56889 45.0226H7.982V45.0147Z" fill="white" style="fill: white; fill: white; fill-opacity: 1"></path>
-                 </svg>
-                
-              </div>
-           </div>
-           <span class="h4">Проект Московской биржи — <br> платформа личных финансов</span>
-           <a href="https://finuslugi.ru/?from=main_page_moex_modul_shto_delat&amp;name=zarabotat" class="btn primary" target="_blank">Перейти на Финуслуги</a>
-        </div>
-        <div class="right col-md-8">
-           <div class="row">
-            <div class="col-md-4 mb-4">
-                 <div class="card">
-                    <div>
-                       <!-- Первая картинка появляется из левого нижнего угла -->
-                       <img src="./assets/img/bl-3-1.png" alt="Изображение 1 для карточки 1" class="right-middle-image">
-                       <!-- Вторая картинка появляется из правой стороны середины -->
-                       <img src="./assets/img/bl-3-2.png" alt="Изображение 2 для карточки 1" class="bottom-left-image1">
-                    </div>
-                    <div class="card-body">
-                       <h5 class="card-title">Заработать</h5>
-                       <p class="card-text">Откройте брокерский счет с минимальными комиссиями</p>
-                       <a href="https://finuslugi.ru/brokers?from=main_page_moex_modul_shto_delat&name=zarabotat" class="btn learn_more">Узнать подробнее</a>
-                    </div>
-                 </div>
-              </div>
-              <div class="col-md-4 mb-4">
-                 <div class="card">
-                    <div>
-                       <!-- Первая картинка появляется из левого верхнего угла -->
-                       <img src="./assets/img/bl-1-1.png" alt="Изображение 3 для карточки 2" class="top-left-image2">
-                       <!-- Вторая картинка появляется из правого верхнего угла -->
-                       <img src="./assets/img/bl-1-2.png" alt="Изображение 4 для карточки 2" class="top-right-image2">
-                       <!-- Первая картинка появляется из левого нижнего угла -->
-                       <img src="./assets/img/bl-1-3.png" alt="Изображение 5 для карточки 2" class="bottom-left-image2">
-                       <!-- Вторая картинка появляется из правой стороны нижнего угла -->
-                       <img src="./assets/img/bl-1-4.png" alt="Изображение 6 для карточки 2" class="bottom-right-image2">
-                    </div>
-                    <div class="card-body">
-                       <h5 class="card-title">Сохранить</h5>
-                       <p class="card-text">Вклады с высокими ставками и бонусом до +5%</p>
-                       <a href="https://finuslugi.ru/potrebitelskie_kredity?from=main_page_moex_modul_shto_delat&name=zanyat" class="btn learn_more">Узнать подробнее</a>
-                    </div>
-                 </div>
-              </div>
-              <div class="col-md-4 mb-4">
-                 <div class="card">
-                    <div>
-                       <img src="./assets/img/bl-2-1.png" alt="Изображение 7 для карточки 3" class="top-right-image3">
-                       <img src="./assets/img/bl-2-2.png" alt="Изображение 8 для карточки 3" class="bottom-left-image3">
-                    </div>
-                    <div class="card-body">
-                       <h5 class="card-title">Накопить</h5>
-                       <p class="card-text mt-3">Народные облигации с ежедневным доходом</p>
-                       <a href="https://finuslugi.ru/brokers?from=main_page_moex_modul_shto_delat&name=nakopit" class="btn learn_more">Узнать подробнее</a>
-                    </div>
-                 </div>
-              </div>
-           </div>
-           <div class="row mt-4">
-            <div class="col-md-4 mb-4">
-                 <div class="card">
-                    <div>
-                       <img src="./assets/img/bl-4-1.png" alt="Изображение 9 для карточки 4" class="top-left-image4">
-                       <img src="./assets/img/bl-4-2.png" alt="Изображение 10 для карточки 4" class="bottom-right-image4">
-                    </div>
-                    <div class="card-body">
-                       <h5 class="card-title">Научиться управлять</h5>
-                       <p class="card-text">Курсы по инвестициям от экспертов Московской биржи</p>
-                       <a href="https://school.moex.com/webinars?from=main_page_moex_modul_shto_delat&name=upravlyat" class="btn learn_more">Узнать подробнее</a>
-
-                    </div>
-                 </div>
-              </div>
-              <div class="col-md-4 mb-4">
-                 <div class="card">
-                    <div>
-                       <img src="./assets/img/bl-5-1.png" alt="Изображение 10 для карточки 5" class="top-left-image5">
-                       <img src="./assets/img/bl-5-2.png" alt="Изображение 11 для карточки 5" class="bottom-right-image5">
-
-                    </div>
-                    <div class="card-body">
-                       <h5 class="card-title">Занять</h5>
-                       <p class="card-text">Кредиты с выгодной ставкой и комфортным платежом</p>
-                       <a href="https://finuslugi.ru/potrebitelskie_kredity?from=main_page_moex_modul_shto_delat&name=zanyat" class="btn learn_more">Узнать подробнее</a>
-                    </div>
-                 </div>
-              </div>
-              <div class="col-md-4 mb-4">
-                 <div class="card">
-                    <div>
-                       <img src="./assets/img/bl-6-2.png" alt="Изображение 12 для карточки 6" class="top-right-image6">
-                       <img src="./assets/img/bl-6-1.png" alt="Изображение 13 для карточки 6" class="bottom-left-image6">
-                    </div>
-                    <div class="card-body">
-                       <h5 class="card-title">Купить страховку</h5>
-                       <p class="card-text">Электронный полис ОСАГО в личном кабинете</p>
-                       <a href="https://https://osago.finuslugi.ru/?from=main_page_moex_modul_shto_delat&name=kupit_strahovky" class="btn learn_more">Узнать подробнее</a>
-                    </div>
-                 </div>
-              </div>
-           </div>
-        </div>
-     </div>
-  </div>
-</div>
-    </section>
+    <section class="main-animations"></section>
 
     <!-- Мейн новости с картинками -  -->
     <section class="main-news-images"></section>
@@ -555,11 +371,22 @@
   </main>
 
   <!-- Футер (карта)   -->
-  <footer class="footer-map"></footer>
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <footer>
+    <div class="map-description">Наше местоположение</div>
+    <div class="map">
+      <div class="map_instalation">
+        <a href="https://yandex.ru/maps/213/moscow/search/%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D0%91%D0%B8%D1%80%D0%B6%D0%B0/?utm_medium=mapframe&utm_source=maps"
+          class=" map_instalation_link">Московская биржа в Москве</a>
+        <a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
+          class="map_instalation_link_search">Москва</a>
+      </div>
+      <div class="map_instalation">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?display-text=%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D0%91%D0%B8%D1%80%D0%B6%D0%B0&ll=37.640801%2C55.763765&mode=search&sll=37.640801%2C55.763765&sspn=0.116346%2C0.038748&text=%7B%22text%22%3A%22%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D0%91%D0%B8%D1%80%D0%B6%D0%B0%22%2C%22what%22%3A%5B%7B%22attr_name%22%3A%22chain_id%22%2C%22attr_values%22%3A%5B%22198790889216%22%5D%7D%5D%7D&utm_medium=mapframe&utm_source=maps&z=13.38"
+          class="map_instalation_link_search_frame" crossorigin="anonymous"></iframe>
+      </div>
+    </div>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
@@ -569,11 +396,9 @@
   <script src="js/main.js"></script>
   <script src="js/header-banner.js"></script>
   <script src="https://cryptorank.io/widget/marquee.js"></script>
+  <script src=" https://api-maps.yandex.ru/2.1/?apikey=e8a74b4b-c0a3-4add-81f9-6de0e86bcb95&lang=ru_RU"></script>
+  <script src="js/mapfooter.js"></script>
+
 </body>
 
 </html>
-
-
-
-
-
