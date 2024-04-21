@@ -15,8 +15,8 @@ inputName.addEventListener("blur", function () {
 });
 
 // 2. Окрашивание иконок (лупа и корзина) в красный цвет при наведении
-const redBusket = document.querySelector(".header-top__cart-image");
-const redSearch = document.querySelector(".header-top__search-icon");
+const redBusket = document.getElementById("cart");
+const redSearch = document.getElementById("search");
 
 //Добавляем обработчики событий mouseenter и mouseleave на Лупу
 redSearch.addEventListener("mouseenter", () => {
@@ -37,8 +37,8 @@ redBusket.addEventListener("mouseleave", () => {
 
 // 3. Окрашивание точки и Направления в красный цвет при наведении
 const redDirDots = document.querySelector(".header-top__directions-list");
-const redDots = document.querySelector(".header-top__directions-icon");
-const redDirText = document.querySelector(".header-top__directions-text");
+const redDots = document.getElementById("dots");
+const redDirText = document.getElementById("dir-tittle");
 
 //Добавляем обработчики событий mouseenter и mouseleave на точки и Направления
 redDirDots.addEventListener("mouseenter", () => {
@@ -52,30 +52,17 @@ redDirDots.addEventListener("mouseleave", () => {
 });
 
 // 4. Окрашивание элементов выпадающего списка в красный цвет при наведении
-const redLi = document.querySelector(".li-red");
-const redH2s = document.querySelectorAll(".h2-red");
+const redLi = document.querySelectorAll(".li-red");
 const redArrows = document.querySelectorAll(".header-top__directions-arrow");
 
-// Добавляем обработчики событий mouseenter и mouseleave на элементы выпадающего списка
-redArrows.forEach((redArrow) => {
-  redLi.addEventListener("mouseenter", () => {
-    redArrow.src = "./assets/img/header-top/diagonal-arrow-right-up-red.svg";
+redLi.forEach((el) => {
+  const redH2s = el.querySelector(".h2-red");
+  el.addEventListener("mouseenter", () => {
+    redH2s.style.color = "red";
   });
-});
-redH2s.forEach((redH2) => {
-  redLi.addEventListener("mouseenter", () => {
-    redH2.style.color = "red";
-  });
-});
 
-redArrows.forEach((redArrow) => {
-  redLi.addEventListener("mouseleave", () => {
-    redArrow.src = "./assets/img/header-top/diagonal-arrow-right-up-black.svg";
-  });
-});
-redH2s.forEach((redH2) => {
-  redLi.addEventListener("mouseleave", () => {
-    redH2.style.color = "black";
+  el.addEventListener("mouseleave", () => {
+    redH2s.style.color = "black";
   });
 });
 
@@ -107,3 +94,31 @@ const minut = dateCur.getMinutes();
 
 let now = `${dayOfWeek}, ${date} ${month} ${hour}:${minut}`;
 currentDate.textContent = now;
+
+// 6. Выпадающее меню
+// function dropdown() {
+//   document.getElementById("myDropdown").classList.toggle("header-top__dropdown-show");
+// }
+// document.getElementById("drop").addEventListener("click", dropdown);
+
+document.getElementById("drop").addEventListener("click", function (event) {
+  event.preventDefault();
+  document
+    .getElementById("myDropdown")
+    .classList.toggle("header-top__dropdown-show");
+  redDots.src = "./assets/img/header-top/cross-red.svg";
+});
+
+// Закрыть меню при щелчке за пределами
+document.addEventListener("click", function (event) {
+  if (!event.target.matches("#myDropdown")) {
+    let dropdowns = document.getElementsByClassName(".dropdown-content");
+    let i;
+    for (i = 0; i < dropdowns.length; i++) {
+      let openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains("show")) {
+        openDropdown.classList.remove("show");
+      }
+    }
+  }
+});
