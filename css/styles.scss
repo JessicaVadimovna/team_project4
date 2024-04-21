@@ -19,6 +19,7 @@ body {
   .btn.primary {
     @extend %button;
    margin-bottom: 0.5rem;
+   margin-left: 100px;
   }
   
   .btn.learn_more {
@@ -32,7 +33,11 @@ body {
     border-radius: 8px;
     border: 1px solid $border;
     margin-bottom: 30px; 
-    
+  }
+
+  .card-body{
+    background-color: white;
+    z-index: 1;
   }
   
   .card:hover img {
@@ -87,7 +92,10 @@ body {
     padding: 0;
    margin-top: 35px;
     margin-bottom: 35px;
-   
+  }
+
+  .money{
+    margin-left: 100px;
   }
   
   .right,
@@ -97,17 +105,20 @@ body {
   
   .icon svg {
     margin-top: -8.5rem;
-    width: 100%;
-    height: 100%;
+    margin-left: 100px;
   }
   
   .main-animations {
     background-color: $secondary-main;
-
   }
   
   .h4 {
     margin-top: -13rem;
+    margin-left: 100px;
+  }
+
+  .container{
+    max-width: 1800px;
   }
 
   //------------------------------------

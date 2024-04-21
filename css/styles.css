@@ -487,6 +487,7 @@ body {
 
 .btn.primary {
   margin-bottom: 0.5rem;
+  margin-left: 100px;
 }
 
 .card {
@@ -495,6 +496,11 @@ body {
   border-radius: 8px;
   border: 1px solid #e8e9ec;
   margin-bottom: 30px;
+}
+
+.card-body {
+  background-color: white;
+  z-index: 1;
 }
 
 .card:hover img {
@@ -551,6 +557,10 @@ h2, .main-news__title {
   margin-bottom: 35px;
 }
 
+.money {
+  margin-left: 100px;
+}
+
 .right,
 .left {
   margin-top: 4rem;
@@ -558,8 +568,7 @@ h2, .main-news__title {
 
 .icon svg {
   margin-top: -8.5rem;
-  width: 100%;
-  height: 100%;
+  margin-left: 100px;
 }
 
 .main-animations {
@@ -568,6 +577,11 @@ h2, .main-news__title {
 
 .h4 {
   margin-top: -13rem;
+  margin-left: 100px;
+}
+
+.container {
+  max-width: 1800px;
 }
 
 .weather-container {
