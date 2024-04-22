@@ -1,18 +1,150 @@
-const i18next = require('i18next');
-const I18nextBrowserLanguageDetector = require('i18next-browser-languagedetector');
-const environmentVariables = require('./translator');
-const { i18nextLanguages } = environmentVariables;
+// Скачиваем библиотеку i18next
+import i18next from 'i18next';
 
-i18next
-    .use(I18nextBrowserLanguageDetector)
-    .init({
-        resources: i18nextLanguages,
-        fallbackLng: 'ru',
-        lowerCaseLng: true,
-        debug: false,
+// Инициализируем i18next
+i18next.init({
+    lng: 'ru', // Язык по умолчанию
+    fallbackLng: 'en', // Запасной язык
+    resources: {
+        ru: {
+            translation: {
+                "Школа Московской биржи": "Moscow Exchange School",
+                "Национальный Клиринговый Центр": "National Clearing Center",
+                "Национальная Товарная Биржа": "National Commodity Exchange",
+                "Биржа для бизнеса": "Business Exchange",
+                "Национальный расчетный депозитарий": "National Settlement Depository",
+                "Венчурный фонд МБ Инновации": "Venture Fund MB Innovations",
+                "Вход": "Login",
+                "Регистрация": "Registration",
+                "Поиск": "Search",
+                "Продукты и услуги": "Products and Services",
+                "Биржевая информация": "Exchange Information",
+                "Документы": "Documents",
+                "Обучение": "Education",
+                "Медиа": "Media",
+                "О компании": "About Company",
+                "Рынки": "Markets",
+                "Индексы": "Indices",
+                "Биржевая информация": "Exchange Information",
+                "Листинг": "Listing",
+                "Управления рисками": "Risk Management",
+                "Технологические решения": "Technological Solutions",
+                "Карта cайта": "Site Map",
+                "Фондовый рынок": "Stock Market",
+                "Срочный рынок": "Futures Market",
+                "Валютный рынок": "Currency Market",
+                "Денежный рынок": "Money Market",
+                "Товарный рынок": "Commodity Market",
+                "Рынок стандартизированных ПФИ": "Standardized Investment Market",
+                "Рынок инноваций и инвестиций": "Innovation and Investment Market",
+                "Сектор Устойчивого развития": "Sustainable Development Sector",
+                "Сектор Роста": "Growth Sector",
+                "Сектор компаний повышенного инвестиционного роста": "High Investment Growth Companies Sector",
+                "Двусторонние сделки с ЦК": "Bilateral Transactions with CC",
+                "Торговый календарь": "Trading Calendar",
+                "Взлёты дня": "Rises of the Day",
+                "Падения дня": "Falls of the Day",
+                "Индексы": "Indices",
+                "Прогноз погоды": "Weather Forecast",
+                "Новости Московской биржи": "Moscow Exchange News",
+                "Выберите,<br>что сделать<br>с деньгами": "Choose what to do with money",
+                "Проект Московской биржи — <br> платформа личных финансов": "Moscow Exchange Project - <br> Personal Finance Platform",
+                "Перейти на Финуслуги": "Go to Finuslugi",
+                "Заработать": "Earn",
+                "Откройте брокерский счет с минимальными комиссиями": "Open a brokerage account with minimal fees",
+                "Узнать подробнее": "Learn more",
+                "Сохранить": "Save",
+                "Вклады с высокими ставками и бонусом до +5%": "High-yield deposits with up to +5% bonus",
+                "Узнать подробнее": "Learn more",
+                "Накопить": "Save up",
+                "Народные облигации с ежедневным доходом": "National bonds with daily income",
+                "Научиться управлять": "Learn to manage",
+                "Курсы по инвестициям от экспертов Московской биржи": "Investment courses from Moscow Exchange experts",
+                "Занять": "Borrow",
+                "Кредиты с выгодной ставкой и комфортным платежом": "Loans with favorable interest rates and comfortable payments",
+                "Купить страховку": "Buy insurance",
+                "Электронный полис ОСАГО в личном кабинете": "Electronic OSAGO policy in your personal account",
+                "Наше местоположение": "Our location",
+                "Московская биржа в Москве": "Moscow Exchange in Moscow",
+                "Москва": "Moscow",
+            },
+        },
+        en: {
+            translation: {
+                "Школа Московской биржи": "Moscow Exchange School",
+                "Национальный Клиринговый Центр": "National Clearing Center",
+                "Национальная Товарная Биржа": "National Commodity Exchange",
+                "Биржа для бизнеса": "Business Exchange",
+                "Национальный расчетный депозитарий": "National Settlement Depository",
+                "Венчурный фонд МБ Инновации": "Venture Fund MB Innovations",
+                "Вход": "Login",
+                "Регистрация": "Registration",
+                "Поиск": "Search",
+                "Продукты и услуги": "Products and Services",
+                "Биржевая информация": "Exchange Information",
+                "Документы": "Documents",
+                "Обучение": "Education",
+                "Медиа": "Media",
+                "О компании": "About Company",
+                "Рынки": "Markets",
+                "Индексы": "Indices",
+                "Биржевая информация": "Exchange Information",
+                "Листинг": "Listing",
+                "Управления рисками": "Risk Management",
+                "Технологические решения": "Technological Solutions",
+                "Карта cайта": "Site Map",
+                "Фондовый рынок": "Stock Market",
+                "Срочный рынок": "Futures Market",
+                "Валютный рынок": "Currency Market",
+                "Денежный рынок": "Money Market",
+                "Товарный рынок": "Commodity Market",
+                "Рынок стандартизированных ПФИ": "Standardized Investment Market",
+                "Рынок инноваций и инвестиций": "Innovation and Investment Market",
+                "Сектор Устойчивого развития": "Sustainable Development Sector",
+                "Сектор Роста": "Growth Sector",
+                "Сектор компаний повышенного инвестиционного роста": "High Investment Growth Companies Sector",
+                "Двусторонние сделки с ЦК": "Bilateral Transactions with CC",
+                "Торговый календарь": "Trading Calendar",
+                "Взлёты дня": "Rises of the Day",
+                "Падения дня": "Falls of the Day",
+                "Индексы": "Indices",
+                "Прогноз погоды": "Weather Forecast",
+                "Новости Московской биржи": "Moscow Exchange News",
+                "Выберите,<br>что сделать<br>с деньгами": "Choose what to do with money",
+                "Проект Московской биржи — <br> платформа личных финансов": "Moscow Exchange Project - <br> Personal Finance Platform",
+                "Перейти на Финуслуги": "Go to Finuslugi",
+                "Заработать": "Earn",
+                "Откройте брокерский счет с минимальными комиссиями": "Open a brokerage account with minimal fees",
+                "Узнать подробнее": "Learn more",
+                "Сохранить": "Save",
+                "Вклады с высокими ставками и бонусом до +5%": "High-yield deposits with up to +5% bonus",
+                "Узнать подробнее": "Learn more",
+                "Накопить": "Save up",
+                "Народные облигации с ежедневным доходом": "National bonds with daily income",
+                "Научиться управлять": "Learn to manage",
+                "Курсы по инвестициям от экспертов Московской биржи": "Investment courses from Moscow Exchange experts",
+                "Занять": "Borrow",
+                "Кредиты с выгодной ставкой и комфортным платежом": "Loans with favorable interest rates and comfortable payments",
+                "Купить страховку": "Buy insurance",
+                "Электронный полис ОСАГО в личном кабинете": "Electronic OSAGO policy in your personal account",
+                "Наше местоположение": "Our location",
+                "Московская биржа в Москве": "Moscow Exchange in Moscow",
+                "Москва": "Moscow",
+            },
+        },
+    },
+});
+
+// Обработчик события нажатия на элемент навигации
+document.querySelectorAll('.header-top__lang-item').forEach((langItem) => {
+    langItem.addEventListener('click', (e) => {
+        // Получаем код языка
+        const lang = e.target.dataset.lang;
+
+        // Устанавливаем язык в i18next
+        i18next.changeLanguage(lang);
+
+        // Перезагружаем страницу, чтобы применить изменения
+        window.location.reload();
     });
-
-document.querySelector('.header-toplang-en').addEventListener('click', () => {
-    i18next.changeLanguage('en');
-    window.location.reload();
 });
