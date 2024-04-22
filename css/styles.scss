@@ -71,16 +71,7 @@ body {
     text-transform: none;
   }
 
-  .h4{
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-    z-index: 2;
-    margin-bottom: -8rem;
-    position: relative;
-    text-transform: none;
-  }
+  
   
   h2, .main-news__title {
     font-size: 40px;
@@ -105,7 +96,7 @@ body {
   
   .icon svg {
     margin-top: -8.5rem;
-    margin-left: 100px;
+    margin-right: 14.5rem;
   }
   
   .main-animations {
@@ -156,21 +147,142 @@ body {
   .forecast-item p {
     margin: 5px 0;
   }
+
+    .h4{
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      z-index: 2;
+      margin-bottom: -8rem;
+      position: relative;
+      text-transform: none;
+    }
   
-  /*.icon {
-    color: white;
-    font-family: Arial;
-    font-size: 24px;
-    padding: 10px;
-    text-transform: uppercase;
-    line-height: 1.2;
-    background-color: red; 
-    text-align: right; } /*  чтобы выровнять текст по правому краю */
-  /*
+
+//-----------------mobile, tablet--------------------------------------------------//
+ 
+@media (max-width: $small-mobile) {
+.btn.primary{
+  padding: 0;
+  margin-top: 9rem;
+}
+
+.icon svg {
+  width: 60px; 
+  height: 60px;
+  margin-bottom: -15rem;
+  margin-right: -12rem;
+}
+}
   
-  .icon p {
-    margin: 0; /* Убираем отступы между абзацами */
-  /*  direction: rtl; } /* Изменяем направление текста на right-to-left */
+@media (max-width: $mobile) {
+   
+.btn.primary{
+  margin-top: -5rem;
+  margin-bottom: -2rem;
+}
+    .icon svg {
+      width: 60px; 
+      height: 60px;
+      margin-bottom: -15rem;
+      margin-left: 6rem;
+    }
+
+
+    .h4 {
+      margin-block: 1rem; 
+      margin-bottom: 3rem;
+      font-size: 20px;
+    }
+
+    
+  }
+
+
+
+  @media (max-width: $large-mobile) {
+   
+    .btn.primary{
+      margin-top: -5rem;
+      margin-bottom: -2rem;
+    }
+        .icon svg {
+          width: 60px; 
+          height: 60px;
+          margin-bottom: -5rem;
+          margin-right: 10rem;
+        }
+    
+    
+        .h4 {
+          margin-block: 1rem; 
+          margin-bottom: 3rem;
+          font-size: 10px;
+          font-style: normal;
+          font-weight: 400;
+           line-height: 24px;
+        }
+
+        .money{
+          font-size: 40px;
+          margin-bottom: -2rem;
+        }
+      }
+    
+
+  @media (max-width: $tablet) {
+   
+    .btn.primary{
+      margin-top: -5rem;
+      margin-bottom: -2rem;
+    }
+        .icon svg {
+          width: 60px; 
+          height: 60px;
+          margin-bottom: -15rem;
+          margin-right: 8rem;
+        }
+    
+    
+        .h4 {
+          margin-block: 1rem; 
+          margin-bottom: 3rem;
+          font-size: 20px;
+        }
+
+        .btn.primary{
+          margin-bottom: 1.5rem;
+        }
+      }
+    
+      @media (max-width: $small-tablet) {
+        .left{
+          width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+        }
+    }
+
+ @media (max-width: $tablet) {
+    .money {
+      font-size: 2rem; 
+    }
+  
+    .icon svg {
+      width: 80px; 
+      height: 80px;
+    }
+
+
+  }
+  
+
+
+
   
   
   
