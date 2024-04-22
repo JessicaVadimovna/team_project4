@@ -81,10 +81,13 @@ const dayOfWeek = firstLetter + dayOfWeekLow.slice(1);
 // Получаем текущее число
 const date = dateCur.getDate();
 
-// Получаем текущий месяц
+// Получаем текущий месяц  СЛОМАЛСЯ МЕСЯЦ!!!
 const monthLow = dateCur.toLocaleString(locale, { month: "long" });
 const monthArray = monthLow.split("");
 const month = monthArray[0].toUpperCase() + monthLow.slice(1, length - 1) + "я";
+// console.log(monthLow);
+// console.log(monthLow.slice(1, length - 1));
+// console.log(month);
 
 // Получаем текущий час
 const hour = dateCur.getHours();
