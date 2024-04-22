@@ -287,37 +287,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
   fjs.parentNode.insertBefore(js, fjs);
 })(document, 'script', 'tomorrow-sdk');
-
-i18n.init({
-  lng: 'ru', // Текущий язык
-  resources: {
-    ru: {
-      translation: {
-        'Московская биржа': 'Moscow Exchange',
-        'Школа Московской биржи': 'Moscow Exchange School',
-        'Национальный Клиринговый Центр': 'National Clearing Center',
-        'Национальная Товарная Биржа': 'National Commodity Exchange',
-        'Биржа для бизнеса': 'Business Exchange',
-        'Национальный расчетный депозитарий': 'National Settlement Depository',
-        'Венчурный фонд МБ Инновации': 'Venture Fund MB Innovations',
-        'Вход': 'Login',
-        'Регистрация': 'Registration',
-        'Поиск': 'Search',
-      }
-    },
-    en: {
-      translation: {
-        'Московская биржа': 'Moscow Exchange',
-        'Школа Московской биржи': 'Moscow Exchange School',
-        'Национальный Клиринговый Центр': 'National Clearing Center',
-        'Национальная Товарная Биржа': 'National Commodity Exchange',
-        'Биржа для бизнеса': 'Business Exchange',
-        'Национальный расчетный депозитарий': 'National Settlement Depository',
-        'Венчурный фонд МБ Инновации': 'Venture Fund MB Innovations',
-        'Вход': 'Login',
-        'Регистрация': 'Registration',
-        'Поиск': 'Search',
-      }
-    },
-  }
-});
