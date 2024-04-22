@@ -15,6 +15,14 @@
     &-nav {
       display: flex;
       gap: 30px;
+      a {
+        display: flex;
+        gap: 30px;
+      }
+      ul {
+        display: flex;
+        gap: 30px;
+      }
     }
   }
 
@@ -87,13 +95,6 @@
         border-bottom: none;
       }
     }
-    // &-arrow {
-    //   margin: 0 0 30px 30px;
-    //   &:hover {
-    //     transition: 0.5s ease-in;
-    //     transform: scale(1.3);
-    //   }
-    // }
   }
 
   &__item {
@@ -136,6 +137,9 @@
     }
   }
 }
+.entri-icon {
+  display: none;
+}
 
 @media screen and (max-width: $middle-desktop) {
   .header-top {
@@ -173,57 +177,66 @@
     }
   }
 }
-
+/*менять текст на Иконки */
 @media screen and (max-width: $tablet) {
   .header-top {
     &__rightblock {
-      gap: 15px;
+      gap: 40px;
       &-nav {
-        gap: 15px;
+        gap: 40px;
       }
     }
     &__item {
-      font-size: 18px;
+      font-size: 24px;
     }
     &__date {
-      font-size: 18px;
+      font-size: 24px;
     }
     &__icon {
-      width: 25px;
-      height: 25px;
+      width: 27px;
+      height: 27px;
     }
+    &__date {
+      display: none;
+    }
+    &__search-text {
+      display: none;
+    }
+  }
+  .entri-icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+  }
+  .entry-ent,
+  .entry-reg {
+    display: none;
   }
 }
 
-@media screen and (max-width: $mini-tablet) {
-  .header-top {
-    &__item {
-      font-size: 16px;
-    }
-
-    &__date {
-      font-size: 16px;
-    }
-    &__icon {
-      width: 22px;
-      height: 22px;
-    }
-  }
-}
-/*менять текст Вход Регистрация на Иконки */
 @media screen and (max-width: $small-tablet) {
   .header-top {
     &__item {
-      font-size: 13px;
+      font-size: 22px;
     }
 
     &__date {
-      font-size: 13px;
+      font-size: 22px;
     }
-
     &__icon {
-      width: 18px;
-      height: 18px;
+      width: 24px;
+      height: 24x;
     }
   }
+  .entri-icon {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+  }
 }
+
+// @media screen and (max-width: $mobile) {
+//   .header-top {
+
+//   }
+// }
