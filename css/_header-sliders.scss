@@ -136,3 +136,32 @@ body {
   max-width: 1500px;
   margin: 0 auto;
 }
+
+
+
+/* Медиа запросы */
+
+@media screen and (max-width: $middle-desktop) {
+  .header-slider {
+    padding: 22px 0px 12px 0px;
+  }
+}
+/*менять текст на Иконки */
+@media screen and (max-width: $tablet) {
+  .header-slider {
+    padding: 10px 0 5px 0px;
+  }
+}
+
+@media screen and (max-width: $small-tablet) {
+  .header-slider {
+    padding: 10px 0 5px 0px;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .header-slider {
+    padding: 10px 0 5px 0px;
+  }
+}
+
