@@ -16,14 +16,103 @@ body {
   font-size: 16px;
 }
 
-.btn.primary {
-  @extend %button;
-  margin-bottom: 0.5rem;
-}
 
-.btn.learn_more {
-  @extend %learn_more;
-}
+  .btn.primary {
+    @extend %button;
+   margin-bottom: 0.5rem;
+   margin-left: 100px;
+  }
+  
+  .btn.learn_more {
+    @extend %learn_more;
+   
+  }
+  
+  .card {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: 1px solid $border;
+    margin-bottom: 30px; 
+  }
+
+  .card-body{
+    background-color: white;
+    z-index: 1;
+  }
+  
+  .card:hover img {
+    opacity: 1;
+  }
+  
+  .card-text {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .left {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 70px;
+    margin-left: -5rem;
+  }
+  
+  .left,
+  .card-title, .news-box__title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    z-index: 2;
+    margin-bottom: 1rem;
+    position: relative;
+    text-transform: none;
+  }
+
+  
+  
+  h2, .main-news__title {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+   margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  .money{
+    margin-left: 100px;
+  }
+  
+  .right,
+  .left {
+    margin-top: 4rem;
+  }
+  
+  .icon svg {
+    margin-top: -8.5rem;
+    margin-right: 14.5rem;
+  }
+  
+  .main-animations {
+    background-color: $secondary-main;
+  }
+  
+  .h4 {
+    margin-top: -13rem;
+    margin-left: 100px;
+  }
+
+  .container{
+    max-width: 1800px;
+  }
+
 
 .card {
   width: 100%;
@@ -33,6 +122,180 @@ body {
   margin-bottom: 30px;
 }
 
+
+   //---------------weather---------------------
+  
+  .weather-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .weather-slider {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .slider-track {
+    display: flex;
+    animation: slideRight 20s linear infinite; /* Подстройте длительность анимации по необходимости */
+  }
+  
+  .forecast-item {
+    flex: 0 0 auto;
+    width: 300px; /* Установите ширину для каждого элемента прогноза */
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 15px;
+    margin-right: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .forecast-item p {
+    margin: 5px 0;
+  }
+
+    .h4{
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      z-index: 2;
+      margin-bottom: -8rem;
+      position: relative;
+      text-transform: none;
+    }
+  
+
+//-----------------mobile, tablet--------------------------------------------------//
+ 
+@media (max-width: $small-mobile) {
+.btn.primary{
+  padding: 0;
+  margin-top: 9rem;
+}
+
+.icon svg {
+  width: 60px; 
+  height: 60px;
+  margin-bottom: -15rem;
+  margin-right: -12rem;
+}
+}
+  
+@media (max-width: $mobile) {
+   
+.btn.primary{
+  margin-top: -5rem;
+  margin-bottom: -2rem;
+}
+    .icon svg {
+      width: 60px; 
+      height: 60px;
+      margin-bottom: -15rem;
+      margin-left: 6rem;
+    }
+
+
+    .h4 {
+      margin-block: 1rem; 
+      margin-bottom: 3rem;
+      font-size: 20px;
+    }
+
+    
+  }
+
+
+
+  @media (max-width: $large-mobile) {
+   
+    .btn.primary{
+      margin-top: -5rem;
+      margin-bottom: -2rem;
+    }
+        .icon svg {
+          width: 60px; 
+          height: 60px;
+          margin-bottom: -5rem;
+          margin-right: 10rem;
+        }
+    
+    
+        .h4 {
+          margin-block: 1rem; 
+          margin-bottom: 3rem;
+          font-size: 10px;
+          font-style: normal;
+          font-weight: 400;
+           line-height: 24px;
+        }
+
+        .money{
+          font-size: 40px;
+          margin-bottom: -2rem;
+        }
+      }
+    
+
+  @media (max-width: $tablet) {
+   
+    .btn.primary{
+      margin-top: -5rem;
+      margin-bottom: -2rem;
+    }
+        .icon svg {
+          width: 60px; 
+          height: 60px;
+          margin-bottom: -15rem;
+          margin-right: 8rem;
+        }
+    
+    
+        .h4 {
+          margin-block: 1rem; 
+          margin-bottom: 3rem;
+          font-size: 20px;
+        }
+
+        .btn.primary{
+          margin-bottom: 1.5rem;
+        }
+      }
+    
+      @media (max-width: $small-tablet) {
+        .left{
+          width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+        }
+    }
+
+ @media (max-width: $tablet) {
+    .money {
+      font-size: 2rem; 
+    }
+  
+    .icon svg {
+      width: 80px; 
+      height: 80px;
+    }
+
+
+  }
+  
+
+
+
+  
+  
+  
+  
 .card:hover img {
   opacity: 1;
 }
