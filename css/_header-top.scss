@@ -1,5 +1,5 @@
 .header-top {
-  background-color: white;
+  background-color: $black-100;
   padding: 24px 0px 18px 0px;
   display: flex;
   justify-content: space-between;
@@ -12,6 +12,18 @@
   &__rightblock {
     display: flex;
     gap: 30px;
+    &-nav {
+      display: flex;
+      gap: 30px;
+      a {
+        display: flex;
+        gap: 30px;
+      }
+      ul {
+        display: flex;
+        gap: 30px;
+      }
+    }
   }
 
   &__line {
@@ -31,10 +43,6 @@
     &-list {
       display: flex;
       padding-left: 0;
-
-      &:hover {
-        transition: 2s ease-in;
-      }
     }
     & > ul {
       padding-left: 0;
@@ -42,23 +50,34 @@
     &-text {
       display: inline-block;
       vertical-align: middle;
-      padding-top: 4px;
       font-size: 24px;
+      // padding-top: 4px;
     }
-    &-main > li:hover &-sub {
-      display: block;
-    }
-    &-sub {
-      display: none;
-      // position: relative;
-      // display: grid;
-      // grid-template-columns: repeat(2, 1fr);
-      // column-gap: 100px;
-      // width: 100%;
 
+    &-sub {
       & li {
         border-bottom: 1px solid $black;
         position: relative;
+        &:before {
+          content: "";
+          width: 20px;
+          height: 20px;
+          background: url("../assets/img/header-top/diagonal-arrow-right-up-black.svg")
+            center / contain no-repeat;
+          display: inline-block;
+          border-radius: 50%;
+          margin: 0 0 0 30px;
+          position: absolute;
+          bottom: 10px;
+          left: 0;
+        }
+        &:hover::before {
+          background: url("../assets/img/header-top/diagonal-arrow-right-up-red.svg")
+            center / contain no-repeat;
+          transform: scale(1.6);
+          transition: 0.5s ease-in;
+        }
+
         & h2 {
           padding: 10px 0 0 30px;
           font-size: 30px;
@@ -70,39 +89,19 @@
           font-weight: 100;
           padding: 0 0 20px 30px;
         }
-        // &:before {
-        //   content: "";
-        //   background: url(./assets/img/header-top/diagonal-arrow-right-up-black.svg)
-        //     center/contain no-repeat;
-        //   position: absolute;
-        //   bottom: 0;
-        //   left: 30px;
-        //   width: 30px;
-        //   height: 30px;
-        // }
-        // &:hover:before {
-        //   background: url(./assets/img/header-top/diagonal-arrow-right-up-red.svg)
-        //     center/contain no-repeat;
-        //   transition: 0.5s ease-in;
-        //   transform: scale(1.3);
-        // }
       }
 
       & li:last-child {
         border-bottom: none;
       }
     }
-    &-arrow {
-      margin: 0 0 30px 30px;
-      &:hover {
-        transition: 0.5s ease-in;
-        transform: scale(1.3);
-      }
-    }
   }
 
-  &__hover {
+  &__item {
     font-size: 24px;
+    &:hover {
+      color: $red;
+    }
   }
 
   &__date {
@@ -111,7 +110,7 @@
   }
 
   &__search {
-    // width: 500px;
+    width: auto;
     &-text {
       font-family: inherit;
       font-size: inherit;
@@ -122,35 +121,32 @@
     }
   }
 
-  &__hover:hover {
-    color: $red;
-  }
+  &__dropdown {
+    &-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      inline-size: 100%;
+      height: 40vh;
+      overflow: auto;
+      z-index: 101;
+    }
 
-  &__nav {
-    display: flex;
-    gap: 30px;
+    &-show {
+      display: block;
+    }
   }
 }
-/* Колонки выпадающего меню */
-// .header-top__menu {
-//   position: relative;
-//   display: grid;
-//   grid-template-columns: repeat(2, 1fr);
-//   column-gap: 100px;
-//   width: 100%;
-// }
-// ----Замена grid
-/* display: inline-block;
-    width: 30%;
-    height: 400px; */
+.entri-icon {
+  display: none;
+}
 
 @media screen and (max-width: $middle-desktop) {
   .header-top {
     padding: 22px 0px 12px 0px;
-    &__hover {
+    &__item {
       font-size: 20px;
     }
-
     &__date {
       font-size: 20px;
     }
@@ -158,60 +154,89 @@
       width: 28px;
       height: 28px;
     }
+    &__directions {
+      &-sub {
+        & li {
+          & h2 {
+            padding: 10px 0 0 30px;
+            font-size: 25px;
+            font-weight: 400;
+            margin-bottom: 12px;
+          }
+          & p {
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 100;
+            margin-bottom: 0;
+          }
+        }
+      }
+      &-arrow {
+        margin-bottom: 10px;
+      }
+    }
   }
 }
-
+/*менять текст на Иконки */
 @media screen and (max-width: $tablet) {
   .header-top {
     &__rightblock {
-      gap: 15px;
+      gap: 40px;
+      &-nav {
+        gap: 40px;
+      }
     }
-    &__nav {
-      gap: 15px;
+    &__item {
+      font-size: 24px;
     }
-    &__hover {
-      font-size: 18px;
-    }
-
     &__date {
-      font-size: 18px;
+      font-size: 24px;
     }
     &__icon {
-      width: 25px;
-      height: 25px;
+      width: 27px;
+      height: 27px;
     }
+    &__date {
+      display: none;
+    }
+    &__search-text {
+      display: none;
+    }
+  }
+  .entri-icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+  }
+  .entry-ent,
+  .entry-reg {
+    display: none;
   }
 }
 
-@media screen and (max-width: $mini-tablet) {
-  .header-top {
-    &__hover {
-      font-size: 16px;
-    }
-
-    &__date {
-      font-size: 16px;
-    }
-    &__icon {
-      width: 22px;
-      height: 22px;
-    }
-  }
-}
-/*менять текст Вход Регистрация на Иконки */
 @media screen and (max-width: $small-tablet) {
   .header-top {
-    &__hover {
-      font-size: 13px;
+    &__item {
+      font-size: 22px;
     }
 
     &__date {
-      font-size: 13px;
+      font-size: 22px;
     }
-
     &__icon {
-      width: 18px;
-      height: 18px;
+      width: 24px;
+      height: 24x;
     }
   }
+  .entri-icon {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+  }
 }
+
+// @media screen and (max-width: $mobile) {
+//   .header-top {
+
+//   }
+// }
