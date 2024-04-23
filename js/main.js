@@ -10,15 +10,12 @@ document.addEventListener("DOMContentLoaded", function () {
         bottomLeftImage.style.left = "0";
         bottomLeftImage.style.width = "160px";
         bottomLeftImage.style.zIndex = "1";
-
         rightMiddleImage.style.position = "absolute";
         rightMiddleImage.style.opacity = "0";
         rightMiddleImage.style.bottom = "75px";
         rightMiddleImage.style.right = "0";
         rightMiddleImage.style.width = "211px";
         rightMiddleImage.style.zIndex = "1";
-       
-       
   
   
         card.addEventListener("mouseenter", () => {
@@ -46,17 +43,10 @@ document.addEventListener("DOMContentLoaded", function () {
         topLeftImage.style.left = "0";
         topRightImage.style.top = "0";
         topRightImage.style.right = "0";
-        topRightImage.style.zIndex = "1";
-
         bottomLeftImage2.style.bottom = "0";
         bottomLeftImage2.style.left = "0";
-        bottomLeftImage2.style.zIndex = "1";
-
         bottomRightImage.style.bottom = "0";
         bottomRightImage.style.right = "0";
-        bottomRightImage.style.zIndex = "1";
-
-
         card.addEventListener("mouseenter", () => {
           animateImage(topLeftImage, -50, -50);
           animateImage(topRightImage, 50, -50);
@@ -81,7 +71,6 @@ document.addEventListener("DOMContentLoaded", function () {
         topRightImage3.style.left = "0";
         topRightImage3.style.width = "111px";
         topRightImage3.style.zIndex = "1";
-
         bottomLeftImage3.style.position = "absolute";
         bottomLeftImage3.style.opacity = "0";
         bottomLeftImage3.style.bottom = "75px";
@@ -109,15 +98,12 @@ document.addEventListener("DOMContentLoaded", function () {
       topLeftImage4.style.top = "0"; // Устанавливаем в верхний угол
       topLeftImage4.style.left = "0"; // Устанавливаем в левый угол
       topLeftImage4.style.width = "220px";
-      topLeftImage4.style.zIndex = "1";
   
       bottomRightImage4.style.position = "absolute";
       bottomRightImage4.style.opacity = "0";
       bottomRightImage4.style.bottom = "0"; // Устанавливаем в нижний угол
       bottomRightImage4.style.right = "0"; // Устанавливаем в правый угол
       bottomRightImage4.style.width = "174px";
-      bottomRightImage4.zIndex = "1";
-
   
       card.addEventListener("mouseenter", () => {
           animateImage(topLeftImage4, -40, -50); // Показываем левое верхнее изображение
@@ -139,14 +125,12 @@ document.addEventListener("DOMContentLoaded", function () {
       topLeftImage5.style.top = "0"; // Устанавливаем в верхний угол
       topLeftImage5.style.left = "0"; // Устанавливаем в левый угол
       topLeftImage5.style.width = "113px";
-      topLeftImage5.style.zIndex = "1";
   
       bottomRightImage5.style.position = "absolute";
       bottomRightImage5.style.opacity = "0";
       bottomRightImage5.style.bottom = "0"; // Устанавливаем в нижний угол
       bottomRightImage5.style.right = "0"; // Устанавливаем в правый угол
       bottomRightImage5.style.width = "128px";
-      bottomRightImage5.style.zIndex = "1";
   
       card.addEventListener("mouseenter", () => {
           animateImage(topLeftImage5, -60, -40); // Показываем левое верхнее изображение
