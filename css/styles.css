@@ -500,7 +500,7 @@ body {
 
 .card-body {
   background-color: white;
-  z-index: 1;
+  position: relative;
 }
 
 .card:hover img {
@@ -569,10 +569,14 @@ h2, .main-news__title {
 .icon svg {
   margin-top: -8.5rem;
   margin-left: 100px;
+  width: 100px;
+  height: 100%;
 }
 
 .main-animations {
   background-color: #f3f4f6;
+  position: relative;
+  background-size: cover;
 }
 
 .h4 {
@@ -616,6 +620,57 @@ h2, .main-news__title {
   margin: 5px 0;
 }
 
+@media (max-width: 1300px) {
+  .left, .container {
+    position: relative;
+    flex-direction: column;
+    margin-top: 0;
+    margin-left: 5rem;
+  }
+  .right {
+    align-self: center;
+  }
+  .card-body {
+    margin-top: 0;
+  }
+  .h4 {
+    margin: 0;
+    margin-left: 5rem;
+  }
+  .icon svg {
+    margin-top: 0;
+  }
+  .h2 {
+    margin: 0;
+  }
+}
+@media (max-width: 1060px) {
+  .left, .container {
+    position: relative;
+    flex-direction: column;
+    margin-top: 0;
+    margin-left: 5rem;
+  }
+  .right {
+    align-self: center;
+  }
+  .main-animations {
+    max-width: 1800px;
+  }
+  .card-body {
+    margin-top: 0;
+  }
+  .h4 {
+    margin: 0;
+    margin-left: 5rem;
+  }
+  .icon svg {
+    margin-top: 0;
+  }
+  .h2 {
+    margin: 0;
+  }
+}
 /*.icon {
   color: white;
   font-family: Arial;
