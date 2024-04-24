@@ -180,7 +180,13 @@
 /*менять текст на Иконки */
 @media screen and (max-width: $tablet) {
   .header-top {
+    &__directions {
+      position: relative;
+      left: 160px;
+    }
     &__rightblock {
+      position: relative;
+      right: 100px;
       gap: 40px;
       &-nav {
         gap: 0px;
@@ -204,7 +210,11 @@
     }
     &__dropdown {
       &-content {
-        inline-size: 100%;
+        position: relative;
+        left: -157px;
+        // padding-left: 0;
+        // inline-size: 100%;
+        width: 100vw;
         height: 100vh;
       }
     }

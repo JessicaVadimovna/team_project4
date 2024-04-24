@@ -71,6 +71,13 @@ body {
   align-items: center;
   justify-content: space-between;
   text-align: center;
+  background-color: #f3f4f6;
+}
+
+#logo {
+  width: 200px;
+  position: relative;
+  top: -15px;
 }
 
 .header-links__menu {
@@ -133,7 +140,7 @@ body {
 .hamburger {
   position: relative;
   z-index: 100;
-  /* top: 1rem; */
+  top: 1rem;
   right: 1rem;
   padding: 4px;
   cursor: pointer;
@@ -235,6 +242,32 @@ body {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 1300px) {
+  #logo {
+    width: 180px;
+    position: relative;
+    top: -15px;
+  }
+  .menuItem {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1120px) {
+  #logo {
+    width: 140px;
+    position: fixed;
+    top: 10px;
+  }
+  .hamburger {
+    position: relative;
+    z-index: 100;
+    top: -55px;
+    right: 30px;
+  }
+  .menuItem {
+    font-size: 16px;
+  }
+}
 .header-top {
   background-color: #f3f4f6;
   padding: 24px 0px 18px 0px;
@@ -392,7 +425,13 @@ body {
 }
 /*менять текст на Иконки */
 @media screen and (max-width: 1120px) {
+  .header-top__directions {
+    position: relative;
+    left: 160px;
+  }
   .header-top__rightblock {
+    position: relative;
+    right: 100px;
     gap: 40px;
   }
   .header-top__rightblock-nav {
@@ -415,7 +454,9 @@ body {
     display: none;
   }
   .header-top__dropdown-content {
-    inline-size: 100%;
+    position: relative;
+    left: -157px;
+    width: 100vw;
     height: 100vh;
   }
   .header-top__entry {
@@ -1009,6 +1050,19 @@ footer {
   margin-bottom: 10px;
 }
 
+@media (max-width: 420px) {
+  /* Стили для разрешения mobile */
+  .map-description {
+    font-size: 14px;
+  }
+  .map_instalation_link,
+  .map_instalation_link_search {
+    font-size: 12px;
+  }
+  .map_instalation_link_search_frame {
+    font-size: 10px;
+  }
+}
 body {
   height: 100%;
   font-family: "FavoritPro-Regular", "Roboto", "Arial", sans-serif;

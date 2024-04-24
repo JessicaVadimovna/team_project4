@@ -11,6 +11,13 @@ body {
   align-items: center;
   justify-content: space-between;
   text-align: center;
+  background-color: $black-100;
+}
+
+#logo {
+  width: 200px;
+  position: relative;
+  top: -15px;
 }
 
 .header-links__menu {
@@ -73,7 +80,7 @@ body {
 .hamburger {
   position: relative;
   z-index: 100;
-  /* top: 1rem; */
+  top: 1rem;
   right: 1rem;
   padding: 4px;
   cursor: pointer;
@@ -152,7 +159,6 @@ body {
   font-weight: 400;
   margin-bottom: 35px;
   text-transform: uppercase;
-
 }
 
 .main-news__container {
@@ -175,4 +181,31 @@ body {
   background: none;
   color: red;
   margin-top: 20px;
+}
+
+@media screen and (max-width: $middle-desktop) {
+  #logo {
+    width: 180px;
+    position: relative;
+    top: -15px;
+  }
+  .menuItem {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: $tablet) {
+  #logo {
+    width: 140px;
+    position: fixed;
+    top: 10px;
+  }
+  .hamburger {
+    position: relative;
+    z-index: 100;
+    top: -55px;
+    right: 30px;
+  }
+  .menuItem {
+    font-size: 16px;
+  }
 }
