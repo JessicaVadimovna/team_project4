@@ -184,9 +184,40 @@ document.addEventListener("DOMContentLoaded", function () {
       image.style.opacity = "0";
       image.style.transform = "translate(-50%, -50%)";
     }
-  
-    
+
+    //--------------------------------------------------------------------//
+
+    cards.forEach((card, index) => {
+      const cardBody = card.querySelector(".card-body");
+
+      card.addEventListener("mouseenter", () => {
+          switch (index) {
+              case 0:
+              case 4:
+                  cardBody.style.zIndex = "1"; // Set z-index to 1 for first and fifth cards
+                  break;
+              case 1:
+              case 3:
+                  cardBody.style.zIndex = "3"; // Set z-index to 3 for second and fourth cards
+                  break;
+              case 2:
+                  cardBody.style.zIndex = "3"; // Set z-index to 3 for third card
+                  break;
+              case 5:
+                  cardBody.style.zIndex = "1"; // Set z-index to 1 for sixth card
+                  break;
+              default:
+                  break;
+          }
+      });
+
+      card.addEventListener("mouseleave", () => {
+          cardBody.style.zIndex = ""; 
+      });
   });
+  });
+    
+
   
   
   //----------------------погода--- openweathermap-----------------//
