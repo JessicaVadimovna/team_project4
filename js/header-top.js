@@ -4,7 +4,7 @@ console.log(inputName);
 
 // Строка поиска: убираем/возвращаем слово "Поиск"
 inputName.addEventListener("focus", function () {
-  inputName.placeholder = "Введите минимум два символа";
+  inputName.placeholder = "Введите два символа";
   redSearch.src = "./assets/img/header-top/search-red.svg";
   inputName.style.outline = "none";
 });
@@ -82,12 +82,19 @@ const dayOfWeek = firstLetter + dayOfWeekLow.slice(1);
 const date = dateCur.getDate();
 
 // Получаем текущий месяц  СЛОМАЛСЯ МЕСЯЦ!!!
+// const monthLow = dateCur.toLocaleString(locale, { month: "long" });
+// const monthArray = monthLow.split("");
+// const month = monthArray[0].toUpperCase() + monthLow.slice(1, length - 1) + "я";
+
 const monthLow = dateCur.toLocaleString(locale, { month: "long" });
 const monthArray = monthLow.split("");
-const month = monthArray[0].toUpperCase() + monthLow.slice(1, length - 1) + "я";
-// console.log(monthLow);
-// console.log(monthLow.slice(1, length - 1));
-// console.log(month);
+const monthArrayChangedLetter = monthArray.toSpliced(-1, 1, "я");
+const monthUpper = monthArrayChangedLetter.toSpliced(
+  0,
+  1,
+  monthArrayChangedLetter[0].toUpperCase()
+);
+const month = monthUpper.join("");
 
 // Получаем текущий час
 const hour = dateCur.getHours();
@@ -98,30 +105,41 @@ const minut = dateCur.getMinutes();
 let now = `${dayOfWeek}, ${date} ${month} ${hour}:${minut}`;
 currentDate.textContent = now;
 
-// 6. Выпадающее меню
-// function dropdown() {
-//   document.getElementById("myDropdown").classList.toggle("header-top__dropdown-show");
-// }
-// document.getElementById("drop").addEventListener("click", dropdown);
-
-document.getElementById("drop").addEventListener("click", function (event) {
+// 6. Выпадающее меню Направления
+document.getElementById("drop-dir").addEventListener("click", function (event) {
   event.preventDefault();
   document
-    .getElementById("myDropdown")
+    .getElementById("dropdown-dir")
     .classList.toggle("header-top__dropdown-show");
   redDots.src = "./assets/img/header-top/cross-red.svg";
+  document.getElementById("dropdown-reg").classList.remove("open");
 });
 
 // Закрыть меню при щелчке за пределами
-document.addEventListener("click", function (event) {
-  if (!event.target.matches("#myDropdown")) {
-    let dropdowns = document.getElementsByClassName(".dropdown-content");
-    let i;
-    for (i = 0; i < dropdowns.length; i++) {
-      let openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains("show")) {
-        openDropdown.classList.remove("show");
-      }
-    }
-  }
+// document.addEventListener("click", function (event) {
+//   if (!event.target.matches("#dropdown-dir")) {
+//     let dropdowns = document.getElementsByClassName(".dropdown-content");
+//     let i;
+//     for (i = 0; i < dropdowns.length; i++) {
+//       let openDropdown = dropdowns[i];
+//       if (openDropdown.classList.contains("show")) {
+//         openDropdown.classList.remove("show");
+//       }
+//     }
+//   }
+// });
+
+// const div = document.querySelector("#dropdown-dir");
+// document.addEventListener("click", (e) => {
+//   const withinBoundaries = e.composedPath().includes(div);
+
+//   if (!withinBoundaries) {
+//     div.style.display = "none"; // скрываем элемент т к клик был за его пределами
+//   }
+// });
+
+// 7. Выпадающее меню Регистрация
+document.getElementById("entry").addEventListener("click", function (event) {
+  event.preventDefault();
+  document.getElementById("dropdown-reg").classList.toggle("open");
 });

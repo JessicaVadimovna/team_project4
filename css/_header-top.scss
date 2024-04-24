@@ -4,11 +4,6 @@
   display: flex;
   justify-content: space-between;
 
-  &__leftblock {
-    display: flex;
-    gap: 10px;
-  }
-
   &__rightblock {
     display: flex;
     gap: 30px;
@@ -43,6 +38,7 @@
     &-list {
       display: flex;
       padding-left: 0;
+      cursor: pointer;
     }
     & > ul {
       padding-left: 0;
@@ -51,7 +47,6 @@
       display: inline-block;
       vertical-align: middle;
       font-size: 24px;
-      // padding-top: 4px;
     }
 
     &-sub {
@@ -93,6 +88,9 @@
 
       & li:last-child {
         border-bottom: none;
+        & p {
+          padding-bottom: 40px;
+        }
       }
     }
   }
@@ -101,6 +99,7 @@
     font-size: 24px;
     &:hover {
       color: $red;
+      transition: 0.4s ease-in;
     }
   }
 
@@ -137,6 +136,10 @@
     }
   }
 }
+.li-red a:hover {
+  text-decoration: none;
+  color: black;
+}
 .entri-icon {
   display: none;
 }
@@ -167,12 +170,9 @@
             font-size: 16px;
             line-height: 18px;
             font-weight: 100;
-            margin-bottom: 0;
+            margin-bottom: 15px;
           }
         }
-      }
-      &-arrow {
-        margin-bottom: 10px;
       }
     }
   }
@@ -183,7 +183,7 @@
     &__rightblock {
       gap: 40px;
       &-nav {
-        gap: 40px;
+        gap: 0px;
       }
     }
     &__item {
@@ -202,15 +202,34 @@
     &__search-text {
       display: none;
     }
+    &__dropdown {
+      &-content {
+        inline-size: 100%;
+        height: 100vh;
+      }
+    }
+    &__entry {
+      position: relative;
+      & ul {
+        display: none;
+      }
+    }
+  }
+  .open ul {
+    display: block;
+    position: absolute;
+    left: -25px;
+    bottom: -188px;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 102;
+    line-height: 50px;
+    padding: 30px 10px 30px 10px;
   }
   .entri-icon {
     display: inline-block;
     width: 25px;
     height: 25px;
-  }
-  .entry-ent,
-  .entry-reg {
-    display: none;
   }
 }
 
@@ -234,9 +253,3 @@
     height: 22px;
   }
 }
-
-// @media screen and (max-width: $mobile) {
-//   .header-top {
-
-//   }
-// }
