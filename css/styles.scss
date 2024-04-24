@@ -1,6 +1,5 @@
 @import "colors";
 @import "fonts";
-@import "mixins";
 @import "./extends";
 @import "lina";
 @import "sizes";
@@ -15,7 +14,6 @@ body {
   font-family: "FavoritPro-Regular", "Roboto", "Arial", sans-serif;
   font-size: 16px;
 }
-
 
   .btn.primary {
     @extend %button;
@@ -75,7 +73,7 @@ body {
 
   
   
-  h2, .main-news__title {
+  h2{
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -85,6 +83,7 @@ body {
     padding: 0;
    margin-top: 35px;
     margin-bottom: 35px;
+    margin-left: 5rem;
   }
 
   .money{
@@ -97,22 +96,23 @@ body {
   }
   
   .icon svg {
-    margin-left: -9rem;
+    margin-bottom: -5rem;
+    margin-left: 100px;
     width: 100px;
     height: 100%;
-    margin-bottom: -5rem;
   }
   
   .main-animations {
-    background-color: $secondary-main;
+    background-color: #f3f4f6;
     position: relative;
-  background-size: cover; 
+    background-size: cover;
   }
   
   
   
   .h4 {
     margin-left: 100px;
+    font-size: 24px;
   }
 
   .container{

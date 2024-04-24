@@ -136,3 +136,62 @@ body {
   max-width: 1500px;
   margin: 0 auto;
 }
+
+
+
+/* Медиа запросы */
+@media screen and (max-width: $middle-desktop) {
+  .header-slider {
+    padding: 20px 0;
+  }
+
+  #vzleti-btn,
+  #padeniya-btn,
+  #indeksi-btn {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .header-slider {
+    padding: 15px 0;
+  }
+
+  #vzleti-btn,
+  #padeniya-btn,
+  #indeksi-btn {
+    margin-bottom: 10px;
+    font-size: 12px;
+    padding: 7px 12px;
+  }
+}
+
+@media screen and (max-width: $small-tablet) {
+  .header-slider {
+    padding: 10px 0;
+  }
+
+  #vzleti-btn,
+  #padeniya-btn,
+  #indeksi-btn {
+    margin-bottom: 10px;
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .header-slider {
+    padding: 8px 0;
+  }
+
+  #vzleti-btn,
+  #padeniya-btn,
+  #indeksi-btn {
+    margin-bottom: 8px;
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+}
+
