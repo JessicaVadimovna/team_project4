@@ -271,6 +271,7 @@ body {
 .header-top__directions-list {
   display: flex;
   padding-left: 0;
+  cursor: pointer;
 }
 .header-top__directions > ul {
   padding-left: 0;
@@ -323,6 +324,7 @@ body {
 }
 .header-top__item:hover {
   color: #ff0508;
+  transition: 0.4s ease-in;
 }
 .header-top__date {
   opacity: 0.6;
@@ -350,6 +352,11 @@ body {
 }
 .header-top__dropdown-show {
   display: block;
+}
+
+.li-red a:hover {
+  text-decoration: none;
+  color: black;
 }
 
 .entri-icon {
@@ -421,7 +428,7 @@ body {
     display: block;
     position: absolute;
     left: -25px;
-    bottom: -140px;
+    bottom: -188px;
     background-color: white;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 102;
