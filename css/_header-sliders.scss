@@ -91,13 +91,19 @@
   color: #3a3a3a;
 }
 
+.cr-widget-marquee {
+  max-width: 1040px; 
+  max-height: 40px; 
+  overflow: hidden;
+} 
+
 .cr-widget-marquee-container {
   display: flex;
   overflow: hidden;
   position: relative;
   padding: 10px;
   border-radius: 0 !important;
-  max-width: 1060px;
+  max-width: 1040px;
 }
 
 .cr-widget-marquee-container__dark {
@@ -136,8 +142,3 @@ body {
   max-width: 1500px;
   margin: 0 auto;
 }
-
-
-
-/* Медиа запросы */
-
