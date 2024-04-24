@@ -1050,6 +1050,19 @@ footer {
   margin-bottom: 10px;
 }
 
+@media (max-width: 420px) {
+  /* Стили для разрешения mobile */
+  .map-description {
+    font-size: 14px;
+  }
+  .map_instalation_link,
+  .map_instalation_link_search {
+    font-size: 12px;
+  }
+  .map_instalation_link_search_frame {
+    font-size: 10px;
+  }
+}
 body {
   height: 100%;
   font-family: "FavoritPro-Regular", "Roboto", "Arial", sans-serif;
