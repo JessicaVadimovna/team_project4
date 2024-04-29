@@ -30,8 +30,9 @@
   }
 
   &__icon {
-    width: 36px;
-    height: 36px;
+    width: 30px;
+    height: 30px;
+    margin-top: -9px;
   }
 
   &__directions {
@@ -39,6 +40,7 @@
       display: flex;
       padding-left: 0;
       cursor: pointer;
+      gap: 5px;
     }
     & > ul {
       padding-left: 0;
@@ -96,7 +98,8 @@
   }
 
   &__item {
-    font-size: 24px;
+    font-size: 16px;
+
     &:hover {
       color: $red;
       transition: 0.4s ease-in;
@@ -105,17 +108,17 @@
 
   &__date {
     opacity: 0.6;
-    font-size: 24px;
+    font-size: 16px;
   }
 
   &__search {
-    width: auto;
+    width: 500px;
     &-text {
       font-family: inherit;
       font-size: inherit;
       border: none;
       background-color: transparent;
-      font-size: 24px;
+      font-size: 16px;
       width: 80%;
     }
   }
@@ -147,16 +150,6 @@
 @media screen and (max-width: $middle-desktop) {
   .header-top {
     padding: 22px 0px 12px 0px;
-    &__item {
-      font-size: 20px;
-    }
-    &__date {
-      font-size: 20px;
-    }
-    &__icon {
-      width: 28px;
-      height: 28px;
-    }
     &__directions {
       &-sub {
         & li {
@@ -175,6 +168,9 @@
         }
       }
     }
+    &__search {
+      width: 300px;
+    }
   }
 }
 /*менять текст на Иконки */
@@ -186,24 +182,22 @@
     }
     &__rightblock {
       position: relative;
-      right: 100px;
-      gap: 40px;
+      right: 75px;
+      gap: 30px;
       &-nav {
         gap: 0px;
       }
     }
-    &__item {
-      font-size: 24px;
-    }
-    &__date {
-      font-size: 24px;
-    }
     &__icon {
-      width: 27px;
-      height: 27px;
+      width: 24px;
+      height: 24px;
+      margin-top: -5px;
     }
     &__date {
       display: none;
+    }
+    &__search {
+      width: auto;
     }
     &__search-text {
       display: none;
@@ -236,24 +230,24 @@
   }
   .entri-icon {
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: 23px;
+    height: 23px;
   }
 }
 
 @media screen and (max-width: $small-tablet) {
   .header-top {
     &__item {
-      font-size: 22px;
+      font-size: 14px;
     }
 
     &__date {
-      font-size: 22px;
+      font-size: 14px;
     }
-    &__icon {
-      width: 24px;
-      height: 24x;
-    }
+    // &__icon {
+    //   width: 24px;
+    //   height: 24x;
+    // }
   }
   .entri-icon {
     display: inline-block;

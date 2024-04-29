@@ -66,8 +66,6 @@ body {
 /* -----------------------HEADER-LIMKS--------------------------------------- */
 .header-links__wrapper {
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   text-align: center;
@@ -229,14 +227,22 @@ body {
   .hamburger {
     position: relative;
     z-index: 100;
-    top: -55px;
-    right: 30px;
+    top: -52px;
   }
   .menuItem {
     font-size: 16px;
   }
   .ul-menu {
     padding-left: 0;
+  }
+  .b1,
+  .b2,
+  .b3 {
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    margin: 5px 0;
+    transition: 0.3s;
   }
 }
 @media screen and (max-width: 855px) {
@@ -339,13 +345,15 @@ body {
   padding: 0;
 }
 .header-top__icon {
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
+  margin-top: -9px;
 }
 .header-top__directions-list {
   display: flex;
   padding-left: 0;
   cursor: pointer;
+  gap: 5px;
 }
 .header-top__directions > ul {
   padding-left: 0;
@@ -394,7 +402,7 @@ body {
   padding-bottom: 40px;
 }
 .header-top__item {
-  font-size: 24px;
+  font-size: 16px;
 }
 .header-top__item:hover {
   color: #ff0508;
@@ -402,17 +410,17 @@ body {
 }
 .header-top__date {
   opacity: 0.6;
-  font-size: 24px;
+  font-size: 16px;
 }
 .header-top__search {
-  width: auto;
+  width: 500px;
 }
 .header-top__search-text {
   font-family: inherit;
   font-size: inherit;
   border: none;
   background-color: transparent;
-  font-size: 24px;
+  font-size: 16px;
   width: 80%;
 }
 .header-top__dropdown-content {
@@ -441,16 +449,6 @@ body {
   .header-top {
     padding: 22px 0px 12px 0px;
   }
-  .header-top__item {
-    font-size: 20px;
-  }
-  .header-top__date {
-    font-size: 20px;
-  }
-  .header-top__icon {
-    width: 28px;
-    height: 28px;
-  }
   .header-top__directions-sub li h2 {
     padding: 10px 0 0 30px;
     font-size: 25px;
@@ -463,6 +461,9 @@ body {
     font-weight: 100;
     margin-bottom: 15px;
   }
+  .header-top__search {
+    width: 300px;
+  }
 }
 /*менять текст на Иконки */
 @media screen and (max-width: 1120px) {
@@ -472,24 +473,22 @@ body {
   }
   .header-top__rightblock {
     position: relative;
-    right: 100px;
-    gap: 40px;
+    right: 75px;
+    gap: 30px;
   }
   .header-top__rightblock-nav {
     gap: 0px;
   }
-  .header-top__item {
-    font-size: 24px;
-  }
-  .header-top__date {
-    font-size: 24px;
-  }
   .header-top__icon {
-    width: 27px;
-    height: 27px;
+    width: 24px;
+    height: 24px;
+    margin-top: -5px;
   }
   .header-top__date {
     display: none;
+  }
+  .header-top__search {
+    width: auto;
   }
   .header-top__search-text {
     display: none;
@@ -518,20 +517,16 @@ body {
   }
   .entri-icon {
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: 23px;
+    height: 23px;
   }
 }
 @media screen and (max-width: 855px) {
   .header-top__item {
-    font-size: 22px;
+    font-size: 14px;
   }
   .header-top__date {
-    font-size: 22px;
-  }
-  .header-top__icon {
-    width: 24px;
-    height: 24x;
+    font-size: 14px;
   }
   .entri-icon {
     display: inline-block;
