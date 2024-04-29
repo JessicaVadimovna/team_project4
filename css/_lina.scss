@@ -6,8 +6,8 @@ body {
 /* -----------------------HEADER-LIMKS--------------------------------------- */
 .header-links__wrapper {
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
+  // justify-content: space-around;
+  // flex-direction: row;
   align-items: center;
   justify-content: space-between;
   text-align: center;
@@ -169,14 +169,23 @@ body {
   .hamburger {
     position: relative;
     z-index: 100;
-    top: -55px;
-    right: 30px;
+    top: -52px;
+    // right: 30px;
   }
   .menuItem {
     font-size: 16px;
   }
   .ul-menu {
     padding-left: 0;
+  }
+  .b1,
+  .b2,
+  .b3 {
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    margin: 5px 0;
+    transition: 0.3s;
   }
 }
 @media screen and (max-width: $small-tablet) {
