@@ -221,13 +221,16 @@ body {
 @media screen and (max-width: 1120px) {
   #logo {
     width: 140px;
-    position: fixed;
+    position: absolute;
     top: 10px;
   }
   .hamburger {
     position: relative;
     z-index: 100;
-    top: -52px;
+    top: -34px;
+  }
+  .header-links__menu {
+    padding: 1.3rem 0;
   }
   .menuItem {
     font-size: 16px;
@@ -952,13 +955,19 @@ body {
   color: #3a3a3a;
 }
 
+.cr-widget-marquee {
+  max-width: 1040px;
+  max-height: 40px;
+  overflow: hidden;
+}
+
 .cr-widget-marquee-container {
   display: flex;
   overflow: hidden;
   position: relative;
   padding: 10px;
   border-radius: 0 !important;
-  max-width: 1060px;
+  max-width: 1040px;
 }
 
 .cr-widget-marquee-container__dark {
@@ -997,7 +1006,6 @@ body {
   max-width: 1500px;
   margin: 0 auto;
 }
-
 
 .map {
   width: 100%;
