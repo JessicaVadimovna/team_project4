@@ -225,9 +225,9 @@ body {
     top: 10px;
   }
   .hamburger {
-    position: relative;
+    position: absolute;
     z-index: 100;
-    top: -34px;
+    top: 13px;
   }
   .header-links__menu {
     padding: 1.3rem 0;
@@ -251,9 +251,6 @@ body {
 @media screen and (max-width: 855px) {
   .header-links__nav-item {
     font-size: 14px;
-  }
-  .hamburger {
-    top: -63px;
   }
 }
 /* ----------------------------MAIN-NEWS---------------------------- */
