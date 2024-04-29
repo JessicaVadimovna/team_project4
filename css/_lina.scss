@@ -163,14 +163,16 @@ body {
 @media screen and (max-width: $tablet) {
   #logo {
     width: 140px;
-    position: fixed;
+    position: absolute;
     top: 10px;
   }
   .hamburger {
     position: relative;
     z-index: 100;
-    top: -52px;
-    // right: 30px;
+    top: -34px;
+  }
+  .header-links__menu {
+    padding: 1.3rem 0;
   }
   .menuItem {
     font-size: 16px;
